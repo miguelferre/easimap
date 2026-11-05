@@ -13,7 +13,7 @@ export const TEXTS = {
 
     hero_eyebrow: 'A celestial atlas of enzymes · five families, starting with GH1',
     hero_title: 'The sky inside an enzyme',
-    hero_lead: 'EASiMap is an atlas of enzyme active sites. It gathers the structures of a family, stands on the sugar and draws the sky that opens from there. Every star is an amino acid, and the closer it sits, the brighter it shines.',
+    hero_lead: 'EASiMap (Enzyme Active Site Map) is an atlas of the active sites of enzymes. It gathers the structures of a family, stands on the sugar and draws the sky that opens from there. Every star is an amino acid, and the closer it sits, the brighter it shines.',
     hero_cta: 'Explore the sky',
     hero_cta2: 'How the map works',
     hero_caption: 'Live data. Family GH1: {p} structures, {r} residues. The sky moves from one protein to the next. Near the sugar the stars hardly move, because evolution kept them there.',
@@ -273,7 +273,7 @@ export const TEXTS = {
 
     hero_eyebrow: 'Atlas celeste de enzimas · cinco familias, empezando por GH1',
     hero_title: 'El cielo dentro de un enzima',
-    hero_lead: 'EASiMap es un atlas de los sitios activos de los enzimas. Reúne las estructuras de una familia, se coloca sobre el azúcar y dibuja el cielo que se abre desde allí. Cada estrella es un aminoácido, y cuanto más cerca está, más brilla.',
+    hero_lead: 'EASiMap (Enzyme Active Site Map) es un atlas de los sitios activos de los enzimas. Reúne las estructuras de una familia, se coloca sobre el azúcar y dibuja el cielo que se abre desde allí. Cada estrella es un aminoácido, y cuanto más cerca está, más brilla.',
     hero_cta: 'Explora el cielo',
     hero_cta2: 'Cómo funciona el mapa',
     hero_caption: 'Datos reales. Familia GH1: {p} estructuras, {r} residuos. El cielo pasa de una proteína a la siguiente. Cerca del azúcar las estrellas casi no se mueven: la evolución las mantuvo ahí.',

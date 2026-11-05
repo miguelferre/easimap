@@ -1,4 +1,4 @@
-# EASiMap
+# EASiMap (Enzyme Active Site Map)
 
 Mapas celestes de familias de enzimas, vistos desde el sustrato. Colócate sobre el azúcar, en el centro del enzima, y mira hacia arriba: cada estrella es un aminoácido.
 
