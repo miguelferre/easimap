@@ -1,0 +1,39 @@
+# Configuración de la familia GH5. Todo lo que el pipeline necesita saber de ella.
+family = "GH5"
+pfam = "PF00150"                              # Cellulase (glycosyl hydrolase family 5); InterPro la integra en IPR001547
+hmm_release = "32.0"                          # Pfam de la tabla de 2020 (comprobado en la réplica)
+interpro = "IPR001547"                        # Glycoside hydrolase, family 5 domain
+interpro_pdbe = ["IPR001547", "IPR017853"]    # mapeos de PDBe usados para elegir la cadena si no hay mapeo Pfam
+reference_pdb = "3ZMR"                        # xiloglucanasa GH5 de Bacteroides ovatus con XXXG (primera proteína de la tabla de 2020)
+reference_chain = "A"
+reference_domain = "Bacteria"
+catalytic_residues = ["GLU", "GLU"]           # nucleófilo y ácido/base: Glu en las dos referencias de 2020
+min_positions = 150                           # 55 % de las 281 columnas de PF00150, la misma proporción que GH1 (250 de 453)
+ligand = "XXXG"                                # xiloglucano de 7 azúcares (Glc4Xyl3) del 3ZMR; en 2020 el fichero era GLC_GH5
+ligand_file = "GLC_GH5"                        # fichero en Tfm/EASiMap/Ligandos (con sufijo _1, ya en el marco)
+
+[substrate]
+# Marco de 2020, deducido comparando GLC_GH5.pdb con GLC_GH5_1.pdb (el mismo fichero tras `origen`): error 0,0006 Å.
+# El ligando es XXXG (heptasacárido). El extremo reductor tiene dos conformaciones del anómero (GLC alt A en la cadena A,
+# BGC alt B en la cadena C), sin O1 modelado. 2020 puso el origen en el C1 de la A, el eje y hacia el C1 de la B
+# (a 0,495 Å) y el eje x hacia la proyección del C4 de la A. No es el oxígeno glicosídico. Se conserva para que
+# los mapas sean comparables con los de 2020.
+origin  = { chain = "A", resseq = 1519, resname = "GLC", altloc = "A", atom = "C1" }
+y_axis  = { chain = "C", resseq = 1,    resname = "BGC", altloc = "B", atom = "C1" }
+x_plane = { chain = "A", resseq = 1519, resname = "GLC", altloc = "A", atom = "C4" }
+
+[replica2020]
+# Residuos catalíticos en la numeración HMM de 2020 (tabla de GH5): 130 y 243.
+reference_positions_2020 = [130, 243]
+# Los mismos residuos en el 3ZMR, con la numeración del PDB (resid). Se dedujeron de la tabla de 2020 con el orden
+# de filas de `lsort`: la fila de la columna 130 es el resid 297 y la de la 243 es el 430. Los dos son Glu.
+reference_resids = [297, 430]
+# Proteínas de la tabla de 2020 (easimap/familias/GH5.tsv): 75 códigos.
+proteins = [
+  "3ZMR", "2ZUM", "1C0D", "4V2X", "4YZP", "1LF1", "5E09", "1WKY", "1G01", "3JUG", "3PZT", "4YHE", "4NF7", "3W0K",
+  "5ECU", "4X0V", "5OYC", "1UUQ", "3ICG", "5IHS", "1EGZ", "3NCO", "4XZB", "4IM4", "4U3A", "1CEC", "2JEP", "3L55",
+  "1TVN", "4LX4", "6JYZ", "5CCU", "2OSW", "1EDG", "5A8M", "2WHJ", "1A3H", "4FK9", "3WSU", "5FIP", "2MAN", "2CKR",
+  "3AMC", "1VJZ", "3PZ9", "5I2U", "4EE9", "4W84", "4W8A", "4HTY", "4M1R", "4TUF", "5HOS", "4W7U", "6GL0", "3VUP",
+  "3WH9", "5I77", "6I1A", "5D8W", "2C0H", "4AWE", "3AYR", "3ZIZ", "4LYP", "4L3M", "1RH9", "3WFL", "5L9C", "1GZJ",
+  "3QR3", "1QNO", "6GJF", "5UHX", "4YHG",
+]

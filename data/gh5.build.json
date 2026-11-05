@@ -1,0 +1,917 @@
+{
+  "family": "GH5",
+  "date": "2026-11-04",
+  "hmm": "PF00150_pfam32.0.hmm",
+  "hmm_sha": "897488c27cbbe3da",
+  "skipped": {
+    "1J83_1": "solo 0 residuos con posición HMM",
+    "1J84_1": "solo 0 residuos con posición HMM",
+    "1OF3_1": "solo 0 residuos con posición HMM",
+    "1OF4_1": "solo 0 residuos con posición HMM",
+    "1OH4_1": "solo 0 residuos con posición HMM",
+    "1UWW_1": "solo 0 residuos con posición HMM",
+    "1UXZ_1": "solo 0 residuos con posición HMM",
+    "1UY0_1": "solo 0 residuos con posición HMM",
+    "1UYX_1": "solo 0 residuos con posición HMM",
+    "1UYY_1": "solo 0 residuos con posición HMM",
+    "1UYZ_1": "solo 0 residuos con posición HMM",
+    "1UZ0_1": "solo 0 residuos con posición HMM",
+    "1V0A_1": "solo 0 residuos con posición HMM",
+    "2BV9_1": "solo 0 residuos con posición HMM",
+    "2BVD_1": "solo 0 residuos con posición HMM",
+    "2CIP_1": "solo 0 residuos con posición HMM",
+    "2CIT_1": "solo 0 residuos con posición HMM",
+    "2V3G_1": "solo 0 residuos con posición HMM",
+    "2VI0_1": "solo 0 residuos con posición HMM",
+    "2VN5_2": "solo 0 residuos con posición HMM",
+    "2VN6_2": "solo 0 residuos con posición HMM",
+    "2WAB_1": "solo 0 residuos con posición HMM",
+    "2WAO_1": "solo 0 residuos con posición HMM",
+    "2YB7_1": "solo 0 residuos con posición HMM",
+    "2YFU_1": "solo 0 residuos con posición HMM",
+    "2YFZ_1": "solo 0 residuos con posición HMM",
+    "2YG0_1": "solo 0 residuos con posición HMM",
+    "2YPJ_1": "solo 0 residuos con posición HMM",
+    "2ZEW_1": "solo 0 residuos con posición HMM",
+    "2ZEX_1": "solo 0 residuos con posición HMM",
+    "2ZEY_1": "solo 0 residuos con posición HMM",
+    "2ZEZ_1": "solo 0 residuos con posición HMM",
+    "3ACF_1": "solo 0 residuos con posición HMM",
+    "3ACG_1": "solo 0 residuos con posición HMM",
+    "3ACH_1": "solo 0 residuos con posición HMM",
+    "3ACI_1": "solo 0 residuos con posición HMM",
+    "3MPC_1": "solo 0 residuos con posición HMM",
+    "3NDY_2": "solo 0 residuos con posición HMM",
+    "3NDZ_2": "solo 0 residuos con posición HMM",
+    "3OEA_1": "solo 0 residuos con posición HMM",
+    "3OEB_1": "solo 0 residuos con posición HMM",
+    "4AEK_1": "solo 0 residuos con posición HMM",
+    "4AEM_1": "solo 0 residuos con posición HMM",
+    "4AFD_1": "solo 0 residuos con posición HMM",
+    "4AFM_1": "solo 0 residuos con posición HMM",
+    "4BA6_1": "solo 0 residuos con posición HMM",
+    "4JCW_1": "solo 0 residuos con posición HMM",
+    "4JJO_1": "solo 0 residuos con posición HMM",
+    "4JS7_1": "solo 0 residuos con posición HMM",
+    "4L48_1": "solo 0 residuos con posición HMM",
+    "4NRR_1": "solo 0 residuos con posición HMM",
+    "4NRS_1": "solo 0 residuos con posición HMM",
+    "4UZ8_1": "solo 0 residuos con posición HMM",
+    "4UZN_1": "solo 0 residuos con posición HMM",
+    "5AFE_1": "solo 0 residuos con posición HMM",
+    "5E9O_1": "solo 0 residuos con posición HMM",
+    "5E9P_1": "solo 0 residuos con posición HMM",
+    "6D2X_1": "solo 0 residuos con posición HMM",
+    "6R31_1": "solo 0 residuos con posición HMM",
+    "6R3M_1": "solo 0 residuos con posición HMM",
+    "6UFV_1": "solo 0 residuos con posición HMM",
+    "6UFW_1": "solo 0 residuos con posición HMM",
+    "7LPO_1": "solo 76 residuos con posición HMM",
+    "7LPP_1": "solo 76 residuos con posición HMM",
+    "7LPQ_1": "solo 76 residuos con posición HMM",
+    "7ZOH_1": "solo 0 residuos con posición HMM",
+    "7ZOI_1": "solo 0 residuos con posición HMM",
+    "7ZON_1": "solo 0 residuos con posición HMM",
+    "7ZOO_1": "solo 0 residuos con posición HMM",
+    "7ZOP_1": "solo 0 residuos con posición HMM",
+    "1CEN_1": "mutante catalítico (E140Q; residuos ['GLN', 'GLU'])",
+    "1CEO_1": "mutante catalítico (E140Q; residuos ['GLN', 'GLU'])",
+    "2CKR_1": "mutante catalítico (YES; residuos ['GLU', 'GLN'])",
+    "2PBO_1": "mutante catalítico (E27Q; residuos ['GLU', None])",
+    "2PC8_1": "mutante catalítico (E292Q; residuos ['GLU', None])",
+    "2PF0_1": "mutante catalítico (F258I; residuos ['GLU', None])",
+    "3AMG_1": "mutante catalítico (E136A; residuos ['ALA', 'GLU'])",
+    "3AOF_1": "mutante catalítico (E136A, W283L; residuos ['ALA', 'GLU'])",
+    "3AYS_1": "mutante catalítico (E154A; residuos ['ALA', 'GLU'])",
+    "3AZR_1": "mutante catalítico (E253A; residuos ['GLU', 'ALA'])",
+    "3AZS_1": "mutante catalítico (E253A; residuos ['GLU', 'ALA'])",
+    "3AZT_1": "mutante catalítico (E253A; residuos ['GLU', 'ALA'])",
+    "3N9K_1": "mutante catalítico (F229A,E292S; residuos ['GLU', None])",
+    "3O6A_1": "mutante catalítico (F144Y, F258Y; residuos ['GLU', None])",
+    "3QHM_1": "mutante catalítico (E342A; residuos ['GLU', 'ALA'])",
+    "3QHN_1": "mutante catalítico (E201A; residuos ['ALA', 'GLU'])",
+    "4M80_1": "mutante catalítico (E292S; residuos ['GLU', None])",
+    "4M81_1": "mutante catalítico (E292S; residuos ['GLU', None])",
+    "4M82_1": "mutante catalítico (E292S; residuos ['GLU', None])",
+    "4U5I_1": "mutante catalítico (E314A; residuos ['GLU', 'ALA'])",
+    "4U5K_1": "mutante catalítico (E314A; residuos ['GLU', 'ALA'])",
+    "4YHG_1": "mutante catalítico (E172A; residuos ['ALA', 'GLU'])",
+    "5A8O_1": "mutante catalítico (YES; residuos ['GLU', 'GLN'])",
+    "5A8P_1": "mutante catalítico (YES; residuos ['GLU', 'GLN'])",
+    "5A8Q_1": "mutante catalítico (YES; residuos ['GLU', 'GLN'])",
+    "5A94_1": "mutante catalítico (YES; residuos ['GLU', 'GLN'])",
+    "5A95_1": "mutante catalítico (YES; residuos ['GLU', 'GLN'])",
+    "5D9M_1": "mutante catalítico (E280A; residuos ['GLU', 'ALA'])",
+    "5D9O_1": "mutante catalítico (E280A; residuos ['GLU', 'ALA'])",
+    "5H4R_1": "mutante catalítico (E188Q; residuos ['GLN', 'GLU'])",
+    "5I78_1": "mutante catalítico (E267A; residuos ['GLU', 'ALA'])",
+    "5I79_1": "mutante catalítico (E267A; residuos ['GLU', 'ALA'])",
+    "5J14_1": "mutante catalítico (E347S; residuos ['GLU', 'SER'])",
+    "5J7Z_1": "mutante catalítico (E339S; residuos ['GLU', 'SER'])",
+    "6GL0_1": "mutante catalítico (E323S; residuos ['GLU', 'SER'])",
+    "6HA9_1": "mutante catalítico (E255A; residuos ['ALA', 'GLU'])",
+    "6HAA_1": "mutante catalítico (E255A; residuos ['ALA', 'GLU'])",
+    "7R28_1": "mutante catalítico (E133Q Y200F; residuos ['GLN', 'GLU'])",
+    "7R29_1": "mutante catalítico (E133Q, Y200F; residuos ['GLN', 'GLU'])",
+    "7R2D_1": "mutante catalítico (E133A; residuos ['ALA', 'GLU'])",
+    "7VT4_1": "mutante catalítico (E393Q; residuos ['GLU', None])",
+    "8ANX_1": "mutante catalítico (E329A; residuos ['ALA', 'GLU'])",
+    "8GHY_1": "mutante catalítico (E154D; residuos ['ALA', 'GLU'])",
+    "9BMK_1": "mutante catalítico (E331A; residuos ['GLU', 'ALA'])",
+    "9F0M_1": "mutante catalítico (E133Q, Y200F; residuos ['GLN', 'GLU'])",
+    "9F0N_1": "mutante catalítico (E133A; residuos ['ALA', 'GLU'])",
+    "9KUA_1": "mutante catalítico (E209A; residuos ['ALA', 'GLU'])",
+    "9L3P_1": "mutante catalítico (E285A; residuos ['GLU', 'ALA'])",
+    "1CZ1:A": "falta un residuo catalítico en las columnas del HMM",
+    "1H4P:A": "falta un residuo catalítico en las columnas del HMM",
+    "7VT8:A": "falta un residuo catalítico en las columnas del HMM"
+  },
+  "counts": {
+    "entidades con anotación InterPro IPR001547": 331,
+    "experimentales": 331,
+    "resolución de 3.0 Å o mejor": 314,
+    "entidades alineadas": 244,
+    "cadena por PDBe pfam": 90,
+    "cadena por PDBe interpro": 152,
+    "cadena = primera de la entidad": 2,
+    "sin mutante catalítico": 196,
+    "grupos al 90 % de identidad": 89,
+    "estructuras en la salida": 86,
+    "posiciones del núcleo": 83
+  },
+  "core_positions": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    115,
+    116,
+    120,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    198,
+    199,
+    200,
+    201,
+    232,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    262,
+    263,
+    264,
+    265,
+    267,
+    268,
+    269
+  ],
+  "entries": [
+    {
+      "pdb": "1BQC",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Thermobifida fusca",
+      "resolution": 1.5,
+      "residues": 240
+    },
+    {
+      "pdb": "1CEC",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Acetivibrio thermocellus",
+      "resolution": 2.15,
+      "residues": 242
+    },
+    {
+      "pdb": "1ECE",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Acidothermus cellulolyticus",
+      "resolution": 2.4,
+      "residues": 260
+    },
+    {
+      "pdb": "1EDG",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Ruminiclostridium cellulolyticum H10",
+      "resolution": 1.6,
+      "residues": 271
+    },
+    {
+      "pdb": "1EGZ",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Dickeya chrysanthemi",
+      "resolution": 2.3,
+      "residues": 228
+    },
+    {
+      "pdb": "1G01",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacillus sp. KSM-635",
+      "resolution": 1.9,
+      "residues": 258
+    },
+    {
+      "pdb": "1H1N",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Thermoascus aurantiacus",
+      "resolution": 1.12,
+      "residues": 256
+    },
+    {
+      "pdb": "1QNR",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Trichoderma reesei",
+      "resolution": 1.4,
+      "residues": 237
+    },
+    {
+      "pdb": "1RH9",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Solanum lycopersicum",
+      "resolution": 1.5,
+      "residues": 230
+    },
+    {
+      "pdb": "1TVN",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Pseudoalteromonas haloplanktis",
+      "resolution": 1.41,
+      "residues": 236
+    },
+    {
+      "pdb": "1WKY",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacillus sp. JAMB-602",
+      "resolution": 1.65,
+      "residues": 234
+    },
+    {
+      "pdb": "2CKS",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Thermobifida fusca",
+      "resolution": 1.6,
+      "residues": 237
+    },
+    {
+      "pdb": "2JEP",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Paenibacillus pabuli",
+      "resolution": 1.4,
+      "residues": 268
+    },
+    {
+      "pdb": "2WHL",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Salipaludibacillus agaradhaerens",
+      "resolution": 1.4,
+      "residues": 232
+    },
+    {
+      "pdb": "2Y8K",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Acetivibrio thermocellus",
+      "resolution": 1.47,
+      "residues": 208
+    },
+    {
+      "pdb": "31AO",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Aspergillus niger",
+      "resolution": 1.419,
+      "residues": 207
+    },
+    {
+      "pdb": "33BU",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Streptomyces sp. TLI_171",
+      "resolution": 1.12,
+      "residues": 241
+    },
+    {
+      "pdb": "3AMC",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Thermotoga maritima MSB8",
+      "resolution": 1.4,
+      "residues": 243
+    },
+    {
+      "pdb": "3AYR",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Piromyces rhizinflatus",
+      "resolution": 2.0,
+      "residues": 260
+    },
+    {
+      "pdb": "3NCO",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Fervidobacterium nodosum Rt17-B1",
+      "resolution": 1.5,
+      "residues": 246
+    },
+    {
+      "pdb": "3NDZ",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Clostridium cellulovorans",
+      "resolution": 2.08,
+      "residues": 270
+    },
+    {
+      "pdb": "3PZG",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Thermotoga petrophila RKU-1",
+      "resolution": 1.4,
+      "residues": 250
+    },
+    {
+      "pdb": "3PZT",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacillus subtilis subsp. subtilis str. 168",
+      "resolution": 1.97,
+      "residues": 239
+    },
+    {
+      "pdb": "3QHO",
+      "chain": "A",
+      "domain": "Archaea",
+      "organism": "Pyrococcus horikoshii",
+      "resolution": 1.65,
+      "residues": 263
+    },
+    {
+      "pdb": "3QR3",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Trichoderma reesei",
+      "resolution": 2.05,
+      "residues": 243
+    },
+    {
+      "pdb": "3VDH",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Segatella bryantii",
+      "resolution": 1.62,
+      "residues": 265
+    },
+    {
+      "pdb": "3W0K",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Caldanaerobius polysaccharolyticus",
+      "resolution": 1.6,
+      "residues": 258
+    },
+    {
+      "pdb": "3WFL",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Talaromyces trachyspermus",
+      "resolution": 1.6,
+      "residues": 210
+    },
+    {
+      "pdb": "3ZIZ",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Podospora anserina",
+      "resolution": 1.4,
+      "residues": 243
+    },
+    {
+      "pdb": "3ZMR",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacteroides ovatus",
+      "resolution": 1.43,
+      "residues": 269
+    },
+    {
+      "pdb": "4AWE",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Neurospora sitophila",
+      "resolution": 1.4,
+      "residues": 209
+    },
+    {
+      "pdb": "4FK9",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Streptomyces sp. SirexAA-E",
+      "resolution": 1.06,
+      "residues": 239
+    },
+    {
+      "pdb": "4HTY",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "uncultured bacterium",
+      "resolution": 2.0,
+      "residues": 250
+    },
+    {
+      "pdb": "4IM4",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Acetivibrio thermocellus",
+      "resolution": 2.42,
+      "residues": 263
+    },
+    {
+      "pdb": "4NF7",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Butyrivibrio proteoclasticus B316",
+      "resolution": 2.111,
+      "residues": 273
+    },
+    {
+      "pdb": "4QP0",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Rhizomucor miehei",
+      "resolution": 2.3,
+      "residues": 259
+    },
+    {
+      "pdb": "4TUF",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Xanthomonas campestris pv. campestris str. ATCC 33913",
+      "resolution": 2.7,
+      "residues": 262
+    },
+    {
+      "pdb": "4U3A",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Acetivibrio thermocellus ATCC 27405",
+      "resolution": 2.42,
+      "residues": 243
+    },
+    {
+      "pdb": "4V2X",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Halalkalibacterium halodurans",
+      "resolution": 1.64,
+      "residues": 256
+    },
+    {
+      "pdb": "4W7W",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Xanthomonas citri subsp. citri 306",
+      "resolution": 1.05,
+      "residues": 259
+    },
+    {
+      "pdb": "4X0V",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Caldicellulosiruptor sp. F32",
+      "resolution": 2.798,
+      "residues": 262
+    },
+    {
+      "pdb": "4XZW",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "uncultured bacterium",
+      "resolution": 1.5,
+      "residues": 242
+    },
+    {
+      "pdb": "4Y7E",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Streptomyces thermolilacinus",
+      "resolution": 1.5,
+      "residues": 239
+    },
+    {
+      "pdb": "4YHE",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacteroidetes bacterium AC2a",
+      "resolution": 1.85,
+      "residues": 266
+    },
+    {
+      "pdb": "4YZT",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacillus licheniformis",
+      "resolution": 1.665,
+      "residues": 249
+    },
+    {
+      "pdb": "5A8M",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Saccharophagus degradans 2-40",
+      "resolution": 1.86,
+      "residues": 259
+    },
+    {
+      "pdb": "5BYW",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Acetivibrio thermocellus ATCC 27405",
+      "resolution": 2.6,
+      "residues": 248
+    },
+    {
+      "pdb": "5CCU",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Rhodococcus equi 103S",
+      "resolution": 2.11,
+      "residues": 228
+    },
+    {
+      "pdb": "5D8Z",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Ganoderma lucidum",
+      "resolution": 2.7,
+      "residues": 244
+    },
+    {
+      "pdb": "5E09",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacillus sp. BG-CS10",
+      "resolution": 2.347,
+      "residues": 261
+    },
+    {
+      "pdb": "5ECU",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Caldicellulosiruptor saccharolyticus",
+      "resolution": 1.5,
+      "residues": 250
+    },
+    {
+      "pdb": "5FIP",
+      "chain": "A",
+      "domain": "Unknown",
+      "organism": "unidentified",
+      "resolution": 1.88,
+      "residues": 249
+    },
+    {
+      "pdb": "5HOS",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Xanthomonas citri subsp. citri 306",
+      "resolution": 1.6,
+      "residues": 239
+    },
+    {
+      "pdb": "5I77",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Aspergillus niger",
+      "resolution": 1.8,
+      "residues": 251
+    },
+    {
+      "pdb": "5IHS",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Cytophaga hutchinsonii ATCC 33406",
+      "resolution": 1.1,
+      "residues": 235
+    },
+    {
+      "pdb": "5WH8",
+      "chain": "A",
+      "domain": "Unknown",
+      "organism": "uncultured organism",
+      "resolution": 1.57,
+      "residues": 243
+    },
+    {
+      "pdb": "6GL2",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Zobellia galactanivorans",
+      "resolution": 1.96,
+      "residues": 261
+    },
+    {
+      "pdb": "6I1A",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Aspergillus niger",
+      "resolution": 1.27,
+      "residues": 235
+    },
+    {
+      "pdb": "6JYZ",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Rhodococcus equi 103S",
+      "resolution": 1.35,
+      "residues": 231
+    },
+    {
+      "pdb": "6KDD",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Fervidobacterium pennivorans DSM 9078",
+      "resolution": 1.92,
+      "residues": 246
+    },
+    {
+      "pdb": "6LA0",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Aspergillus oryzae",
+      "resolution": 1.75,
+      "residues": 238
+    },
+    {
+      "pdb": "6MQ4",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Acetivibrio cellulolyticus",
+      "resolution": 1.4,
+      "residues": 266
+    },
+    {
+      "pdb": "6PZ7",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Clostridium acetobutylicum ATCC 824",
+      "resolution": 1.25,
+      "residues": 261
+    },
+    {
+      "pdb": "6Q1I",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Clostridium longisporum",
+      "resolution": 1.35,
+      "residues": 262
+    },
+    {
+      "pdb": "6R2J",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Stutzerimonas stutzeri A1501",
+      "resolution": 1.44,
+      "residues": 242
+    },
+    {
+      "pdb": "6TPC",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Talaromyces verruculosus",
+      "resolution": 1.52218948487,
+      "residues": 255
+    },
+    {
+      "pdb": "6UI3",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Clostridium cellulovorans",
+      "resolution": 1.3,
+      "residues": 258
+    },
+    {
+      "pdb": "6UJE",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Clostridioides difficile",
+      "resolution": 1.75,
+      "residues": 236
+    },
+    {
+      "pdb": "6WQV",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Ruminococcus champanellensis",
+      "resolution": 1.45,
+      "residues": 262
+    },
+    {
+      "pdb": "6WQY",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Phocaeicola salanitronis DSM 18170",
+      "resolution": 1.05,
+      "residues": 266
+    },
+    {
+      "pdb": "6XRK",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "uncultured bovine rumen ciliate",
+      "resolution": 1.419,
+      "residues": 258
+    },
+    {
+      "pdb": "6XSU",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Ruminococcus flavefaciens",
+      "resolution": 1.41,
+      "residues": 267
+    },
+    {
+      "pdb": "7A3H",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Salipaludibacillus agaradhaerens",
+      "resolution": 0.95,
+      "residues": 237
+    },
+    {
+      "pdb": "7EFZ",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Thermotoga maritima MSB8",
+      "resolution": 1.69,
+      "residues": 239
+    },
+    {
+      "pdb": "7ODJ",
+      "chain": "AAA",
+      "domain": "Bacteria",
+      "organism": "Cellvibrio mixtus",
+      "resolution": 1.3,
+      "residues": 264
+    },
+    {
+      "pdb": "7VT5",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Meiothermus taiwanensis WR-220",
+      "resolution": 1.46,
+      "residues": 244
+    },
+    {
+      "pdb": "8B3Y",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Thermogutta terrifontis",
+      "resolution": 1.25,
+      "residues": 250
+    },
+    {
+      "pdb": "8BQC",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Cellvibrio japonicus",
+      "resolution": 1.57,
+      "residues": 237
+    },
+    {
+      "pdb": "8C10",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Teredinibacter waterburyi",
+      "resolution": 1.0,
+      "residues": 230
+    },
+    {
+      "pdb": "8GF3",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacillus licheniformis",
+      "resolution": 1.3,
+      "residues": 253
+    },
+    {
+      "pdb": "8GHX",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Piromyces finnis",
+      "resolution": 2.46,
+      "residues": 264
+    },
+    {
+      "pdb": "8OZ1",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Cellvibrio japonicus Ueda107",
+      "resolution": 1.3,
+      "residues": 267
+    },
+    {
+      "pdb": "8Z2Y",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Aspergillus oryzae",
+      "resolution": 1.2,
+      "residues": 204
+    },
+    {
+      "pdb": "9BJX",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Segatella copri DSM 18205",
+      "resolution": 1.6,
+      "residues": 257
+    },
+    {
+      "pdb": "9L3D",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Aspergillus oryzae RIB40",
+      "resolution": 1.9,
+      "residues": 259
+    },
+    {
+      "pdb": "9M20",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Glycine max",
+      "resolution": 1.389,
+      "residues": 241
+    }
+  ]
+}

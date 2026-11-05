@@ -1,0 +1,1077 @@
+{
+  "hmm": "PF00232_pfam32.0.hmm",
+  "family_test": [
+    {
+      "hmm": 326,
+      "n_euk": 26,
+      "d_shift_-2": 5.98,
+      "d_shift_-1": 5.53,
+      "d_shift_+0": 2.07,
+      "d_shift_+1": 4.17,
+      "d_shift_+2": 4.93,
+      "best_shift": 0
+    },
+    {
+      "hmm": 327,
+      "n_euk": 26,
+      "d_shift_-2": 8.77,
+      "d_shift_-1": 5.7,
+      "d_shift_+0": 1.41,
+      "d_shift_+1": 4.66,
+      "d_shift_+2": 6.54,
+      "best_shift": 0
+    },
+    {
+      "hmm": 328,
+      "n_euk": 27,
+      "d_shift_-2": 8.97,
+      "d_shift_-1": 6.55,
+      "d_shift_+0": 2.47,
+      "d_shift_+1": 5.23,
+      "d_shift_+2": 6.65,
+      "best_shift": 0
+    },
+    {
+      "hmm": 329,
+      "n_euk": 27,
+      "d_shift_-2": 8.03,
+      "d_shift_-1": 5.12,
+      "d_shift_+0": 1.09,
+      "d_shift_+1": 4.09,
+      "d_shift_+2": 5.45,
+      "best_shift": 0
+    },
+    {
+      "hmm": 330,
+      "n_euk": 27,
+      "d_shift_-2": 8.77,
+      "d_shift_-1": 5.79,
+      "d_shift_+0": 2.51,
+      "d_shift_+1": 4.27,
+      "d_shift_+2": 6.08,
+      "best_shift": 0
+    },
+    {
+      "hmm": 331,
+      "n_euk": 26,
+      "d_shift_-2": 5.6,
+      "d_shift_-1": 6.42,
+      "d_shift_+0": 0.83,
+      "d_shift_+1": 5.06,
+      "d_shift_+2": 4.06,
+      "best_shift": 0
+    },
+    {
+      "hmm": 332,
+      "n_euk": 27,
+      "d_shift_-2": 8.17,
+      "d_shift_-1": 5.16,
+      "d_shift_+0": 3.12,
+      "d_shift_+1": 6.1,
+      "d_shift_+2": 9.8,
+      "best_shift": 0
+    },
+    {
+      "hmm": 333,
+      "n_euk": 27,
+      "d_shift_-2": 4.98,
+      "d_shift_-1": 6.36,
+      "d_shift_+0": 1.74,
+      "d_shift_+1": 9.15,
+      "d_shift_+2": 10.79,
+      "best_shift": 0
+    },
+    {
+      "hmm": 334,
+      "n_euk": 27,
+      "d_shift_-2": 6.22,
+      "d_shift_-1": 2.9,
+      "d_shift_+0": 7.32,
+      "d_shift_+1": 6.59,
+      "d_shift_+2": 10.65,
+      "best_shift": -1
+    },
+    {
+      "hmm": 335,
+      "n_euk": 27,
+      "d_shift_-2": 7.18,
+      "d_shift_-1": 2.39,
+      "d_shift_+0": 6.02,
+      "d_shift_+1": 8.29,
+      "d_shift_+2": 10.89,
+      "best_shift": -1
+    },
+    {
+      "hmm": 336,
+      "n_euk": 26,
+      "d_shift_-2": 6.54,
+      "d_shift_-1": 0.54,
+      "d_shift_+0": 7.18,
+      "d_shift_+1": 6.08,
+      "d_shift_+2": 10.58,
+      "best_shift": -1
+    },
+    {
+      "hmm": 337,
+      "n_euk": 27,
+      "d_shift_-2": 6.1,
+      "d_shift_-1": 5.38,
+      "d_shift_+0": 0.54,
+      "d_shift_+1": 5.74,
+      "d_shift_+2": 6.79,
+      "best_shift": 0
+    },
+    {
+      "hmm": 338,
+      "n_euk": 27,
+      "d_shift_-2": 4.37,
+      "d_shift_-1": 5.34,
+      "d_shift_+0": 1.03,
+      "d_shift_+1": 5.07,
+      "d_shift_+2": 9.03,
+      "best_shift": 0
+    },
+    {
+      "hmm": 339,
+      "n_euk": 27,
+      "d_shift_-2": 5.89,
+      "d_shift_-1": 4.74,
+      "d_shift_+0": 0.5,
+      "d_shift_+1": 5.97,
+      "d_shift_+2": 7.8,
+      "best_shift": 0
+    },
+    {
+      "hmm": 340,
+      "n_euk": 27,
+      "d_shift_-2": 8.45,
+      "d_shift_-1": 5.98,
+      "d_shift_+0": 0.36,
+      "d_shift_+1": 7.84,
+      "d_shift_+2": 8.64,
+      "best_shift": 0
+    },
+    {
+      "hmm": 341,
+      "n_euk": 27,
+      "d_shift_-2": 7.75,
+      "d_shift_-1": 7.9,
+      "d_shift_+0": 0.82,
+      "d_shift_+1": 6.2,
+      "d_shift_+2": 9.57,
+      "best_shift": 0
+    },
+    {
+      "hmm": 342,
+      "n_euk": 27,
+      "d_shift_-2": 8.64,
+      "d_shift_-1": 5.57,
+      "d_shift_+0": 1.06,
+      "d_shift_+1": 7.25,
+      "d_shift_+2": 9.0,
+      "best_shift": 0
+    },
+    {
+      "hmm": 343,
+      "n_euk": 27,
+      "d_shift_-2": 9.18,
+      "d_shift_-1": 6.36,
+      "d_shift_+0": 0.39,
+      "d_shift_+1": 5.75,
+      "d_shift_+2": 8.45,
+      "best_shift": 0
+    },
+    {
+      "hmm": 344,
+      "n_euk": 27,
+      "d_shift_-2": 8.32,
+      "d_shift_-1": 5.37,
+      "d_shift_+0": 0.23,
+      "d_shift_+1": 6.37,
+      "d_shift_+2": 9.17,
+      "best_shift": 0
+    }
+  ],
+  "pairs": [
+    {
+      "eukaryote": "1CBG",
+      "prokaryote": "1BGA",
+      "structural_map": [
+        {
+          "euk": "SER367",
+          "euk_hmm": 331,
+          "prok": "ILE324",
+          "prok_hmm": 331,
+          "ca_distance": 1.72
+        },
+        {
+          "euk": "SER368",
+          "euk_hmm": 332,
+          "prok": "GLY325",
+          "prok_hmm": 332,
+          "ca_distance": 3.17
+        },
+        {
+          "euk": "TRP369",
+          "euk_hmm": 333,
+          "prok": "TRP326",
+          "prok_hmm": 333,
+          "ca_distance": 4.4
+        },
+        {
+          "euk": "LEU370",
+          "euk_hmm": 334,
+          "prok": "TRP326",
+          "prok_hmm": 333,
+          "ca_distance": 1.76
+        },
+        {
+          "euk": "CYS371",
+          "euk_hmm": 335,
+          "prok": "PRO327",
+          "prok_hmm": 334,
+          "ca_distance": 1.37
+        },
+        {
+          "euk": "ILE372",
+          "euk_hmm": 336,
+          "prok": "VAL328",
+          "prok_hmm": 335,
+          "ca_distance": 0.49
+        },
+        {
+          "euk": "TYR373",
+          "euk_hmm": null,
+          "prok": "GLU329",
+          "prok_hmm": 336,
+          "ca_distance": 0.45
+        },
+        {
+          "euk": "PRO374",
+          "euk_hmm": 337,
+          "prok": "SER330",
+          "prok_hmm": 337,
+          "ca_distance": 1.46
+        },
+        {
+          "euk": "GLN375",
+          "euk_hmm": 338,
+          "prok": "ARG331",
+          "prok_hmm": 338,
+          "ca_distance": 1.35
+        }
+      ],
+      "segment_eukaryote": [
+        {
+          "hmm": 330,
+          "resid": 366,
+          "res": "ALA"
+        },
+        {
+          "hmm": 331,
+          "resid": 367,
+          "res": "SER"
+        },
+        {
+          "hmm": 332,
+          "resid": 368,
+          "res": "SER"
+        },
+        {
+          "hmm": 333,
+          "resid": 369,
+          "res": "TRP"
+        },
+        {
+          "hmm": 334,
+          "resid": 370,
+          "res": "LEU"
+        },
+        {
+          "hmm": 335,
+          "resid": 371,
+          "res": "CYS"
+        },
+        {
+          "hmm": 336,
+          "resid": 372,
+          "res": "ILE"
+        },
+        {
+          "hmm": 337,
+          "resid": 374,
+          "res": "PRO"
+        },
+        {
+          "hmm": 338,
+          "resid": 375,
+          "res": "GLN"
+        },
+        {
+          "hmm": 339,
+          "resid": 376,
+          "res": "GLY"
+        },
+        {
+          "hmm": 340,
+          "resid": 377,
+          "res": "ILE"
+        }
+      ],
+      "segment_prokaryote": [
+        {
+          "hmm": 330,
+          "resid": 323,
+          "res": "ASP"
+        },
+        {
+          "hmm": 331,
+          "resid": 324,
+          "res": "ILE"
+        },
+        {
+          "hmm": 332,
+          "resid": 325,
+          "res": "GLY"
+        },
+        {
+          "hmm": 333,
+          "resid": 326,
+          "res": "TRP"
+        },
+        {
+          "hmm": 334,
+          "resid": 327,
+          "res": "PRO"
+        },
+        {
+          "hmm": 335,
+          "resid": 328,
+          "res": "VAL"
+        },
+        {
+          "hmm": 336,
+          "resid": 329,
+          "res": "GLU"
+        },
+        {
+          "hmm": 337,
+          "resid": 330,
+          "res": "SER"
+        },
+        {
+          "hmm": 338,
+          "resid": 331,
+          "res": "ARG"
+        },
+        {
+          "hmm": 339,
+          "resid": 332,
+          "res": "GLY"
+        },
+        {
+          "hmm": 340,
+          "resid": 333,
+          "res": "LEU"
+        }
+      ],
+      "shift_scan": [
+        {
+          "shift": -3,
+          "n": 11,
+          "mean_CA_distance": 7.58
+        },
+        {
+          "shift": -2,
+          "n": 11,
+          "mean_CA_distance": 5.39
+        },
+        {
+          "shift": -1,
+          "n": 11,
+          "mean_CA_distance": 3.4
+        },
+        {
+          "shift": 0,
+          "n": 11,
+          "mean_CA_distance": 2.68
+        },
+        {
+          "shift": 1,
+          "n": 11,
+          "mean_CA_distance": 5.18
+        },
+        {
+          "shift": 2,
+          "n": 11,
+          "mean_CA_distance": 7.47
+        },
+        {
+          "shift": 3,
+          "n": 11,
+          "mean_CA_distance": 8.95
+        }
+      ]
+    },
+    {
+      "eukaryote": "1E1E",
+      "prokaryote": "1GNX",
+      "structural_map": [
+        {
+          "euk": "ASN376",
+          "euk_hmm": 331,
+          "prok": "ALA353",
+          "prok_hmm": 330,
+          "ca_distance": 1.86
+        },
+        {
+          "euk": "PRO377",
+          "euk_hmm": 332,
+          "prok": "MET354",
+          "prok_hmm": 331,
+          "ca_distance": 2.94
+        },
+        {
+          "euk": "TRP378",
+          "euk_hmm": 333,
+          "prok": "TRP356",
+          "prok_hmm": 333,
+          "ca_distance": 2.87
+        },
+        {
+          "euk": "ILE379",
+          "euk_hmm": 334,
+          "prok": "TRP356",
+          "prok_hmm": 333,
+          "ca_distance": 2.4
+        },
+        {
+          "euk": "TYR380",
+          "euk_hmm": 335,
+          "prok": "ALA357",
+          "prok_hmm": 334,
+          "ca_distance": 1.54
+        },
+        {
+          "euk": "MET381",
+          "euk_hmm": 336,
+          "prok": "VAL358",
+          "prok_hmm": 335,
+          "ca_distance": 0.87
+        },
+        {
+          "euk": "TYR382",
+          "euk_hmm": null,
+          "prok": "ASP359",
+          "prok_hmm": 336,
+          "ca_distance": 0.65
+        },
+        {
+          "euk": "PRO383",
+          "euk_hmm": 337,
+          "prok": "PRO360",
+          "prok_hmm": 337,
+          "ca_distance": 0.79
+        },
+        {
+          "euk": "GLU384",
+          "euk_hmm": 338,
+          "prok": "SER361",
+          "prok_hmm": 338,
+          "ca_distance": 0.43
+        }
+      ],
+      "segment_eukaryote": [
+        {
+          "hmm": 330,
+          "resid": 375,
+          "res": "GLY"
+        },
+        {
+          "hmm": 331,
+          "resid": 376,
+          "res": "ASN"
+        },
+        {
+          "hmm": 332,
+          "resid": 377,
+          "res": "PRO"
+        },
+        {
+          "hmm": 333,
+          "resid": 378,
+          "res": "TRP"
+        },
+        {
+          "hmm": 334,
+          "resid": 379,
+          "res": "ILE"
+        },
+        {
+          "hmm": 335,
+          "resid": 380,
+          "res": "TYR"
+        },
+        {
+          "hmm": 336,
+          "resid": 381,
+          "res": "MET"
+        },
+        {
+          "hmm": 337,
+          "resid": 383,
+          "res": "PRO"
+        },
+        {
+          "hmm": 338,
+          "resid": 384,
+          "res": "GLU"
+        },
+        {
+          "hmm": 339,
+          "resid": 385,
+          "res": "GLY"
+        },
+        {
+          "hmm": 340,
+          "resid": 386,
+          "res": "LEU"
+        }
+      ],
+      "segment_prokaryote": [
+        {
+          "hmm": 330,
+          "resid": 353,
+          "res": "ALA"
+        },
+        {
+          "hmm": 331,
+          "resid": 354,
+          "res": "MET"
+        },
+        {
+          "hmm": 332,
+          "resid": 355,
+          "res": "GLY"
+        },
+        {
+          "hmm": 333,
+          "resid": 356,
+          "res": "TRP"
+        },
+        {
+          "hmm": 334,
+          "resid": 357,
+          "res": "ALA"
+        },
+        {
+          "hmm": 335,
+          "resid": 358,
+          "res": "VAL"
+        },
+        {
+          "hmm": 336,
+          "resid": 359,
+          "res": "ASP"
+        },
+        {
+          "hmm": 337,
+          "resid": 360,
+          "res": "PRO"
+        },
+        {
+          "hmm": 338,
+          "resid": 361,
+          "res": "SER"
+        },
+        {
+          "hmm": 339,
+          "resid": 362,
+          "res": "GLY"
+        },
+        {
+          "hmm": 340,
+          "resid": 363,
+          "res": "LEU"
+        }
+      ],
+      "shift_scan": [
+        {
+          "shift": -3,
+          "n": 11,
+          "mean_CA_distance": 7.22
+        },
+        {
+          "shift": -2,
+          "n": 11,
+          "mean_CA_distance": 5.13
+        },
+        {
+          "shift": -1,
+          "n": 11,
+          "mean_CA_distance": 2.92
+        },
+        {
+          "shift": 0,
+          "n": 11,
+          "mean_CA_distance": 2.21
+        },
+        {
+          "shift": 1,
+          "n": 11,
+          "mean_CA_distance": 4.99
+        },
+        {
+          "shift": 2,
+          "n": 11,
+          "mean_CA_distance": 7.06
+        },
+        {
+          "shift": 3,
+          "n": 11,
+          "mean_CA_distance": 8.22
+        }
+      ]
+    },
+    {
+      "eukaryote": "3AHZ",
+      "prokaryote": "1OD0",
+      "structural_map": [
+        {
+          "euk": "SER372",
+          "euk_hmm": 331,
+          "prok": "MET322",
+          "prok_hmm": 331,
+          "ca_distance": 1.15
+        },
+        {
+          "euk": "SER373",
+          "euk_hmm": 332,
+          "prok": "GLY323",
+          "prok_hmm": 332,
+          "ca_distance": 3.62
+        },
+        {
+          "euk": "TRP374",
+          "euk_hmm": 333,
+          "prok": "TRP324",
+          "prok_hmm": 333,
+          "ca_distance": 4.46
+        },
+        {
+          "euk": "LEU375",
+          "euk_hmm": 334,
+          "prok": "TRP324",
+          "prok_hmm": 333,
+          "ca_distance": 1.9
+        },
+        {
+          "euk": "LYS376",
+          "euk_hmm": 335,
+          "prok": "GLU325",
+          "prok_hmm": 334,
+          "ca_distance": 1.69
+        },
+        {
+          "euk": "VAL377",
+          "euk_hmm": 336,
+          "prok": "ILE326",
+          "prok_hmm": 335,
+          "ca_distance": 0.9
+        },
+        {
+          "euk": "VAL378",
+          "euk_hmm": null,
+          "prok": "VAL327",
+          "prok_hmm": 336,
+          "ca_distance": 1.05
+        },
+        {
+          "euk": "PRO379",
+          "euk_hmm": 337,
+          "prok": "PRO328",
+          "prok_hmm": 337,
+          "ca_distance": 0.94
+        },
+        {
+          "euk": "TRP380",
+          "euk_hmm": 338,
+          "prok": "GLU329",
+          "prok_hmm": 338,
+          "ca_distance": 1.66
+        }
+      ],
+      "segment_eukaryote": [
+        {
+          "hmm": 330,
+          "resid": 371,
+          "res": "ALA"
+        },
+        {
+          "hmm": 331,
+          "resid": 372,
+          "res": "SER"
+        },
+        {
+          "hmm": 332,
+          "resid": 373,
+          "res": "SER"
+        },
+        {
+          "hmm": 333,
+          "resid": 374,
+          "res": "TRP"
+        },
+        {
+          "hmm": 334,
+          "resid": 375,
+          "res": "LEU"
+        },
+        {
+          "hmm": 335,
+          "resid": 376,
+          "res": "LYS"
+        },
+        {
+          "hmm": 336,
+          "resid": 377,
+          "res": "VAL"
+        },
+        {
+          "hmm": 337,
+          "resid": 379,
+          "res": "PRO"
+        },
+        {
+          "hmm": 338,
+          "resid": 380,
+          "res": "TRP"
+        },
+        {
+          "hmm": 339,
+          "resid": 381,
+          "res": "GLY"
+        },
+        {
+          "hmm": 340,
+          "resid": 382,
+          "res": "PHE"
+        }
+      ],
+      "segment_prokaryote": [
+        {
+          "hmm": 330,
+          "resid": 321,
+          "res": "ALA"
+        },
+        {
+          "hmm": 331,
+          "resid": 322,
+          "res": "MET"
+        },
+        {
+          "hmm": 332,
+          "resid": 323,
+          "res": "GLY"
+        },
+        {
+          "hmm": 333,
+          "resid": 324,
+          "res": "TRP"
+        },
+        {
+          "hmm": 334,
+          "resid": 325,
+          "res": "GLU"
+        },
+        {
+          "hmm": 335,
+          "resid": 326,
+          "res": "ILE"
+        },
+        {
+          "hmm": 336,
+          "resid": 327,
+          "res": "VAL"
+        },
+        {
+          "hmm": 337,
+          "resid": 328,
+          "res": "PRO"
+        },
+        {
+          "hmm": 338,
+          "resid": 329,
+          "res": "GLU"
+        },
+        {
+          "hmm": 339,
+          "resid": 330,
+          "res": "GLY"
+        },
+        {
+          "hmm": 340,
+          "resid": 331,
+          "res": "ILE"
+        }
+      ],
+      "shift_scan": [
+        {
+          "shift": -3,
+          "n": 11,
+          "mean_CA_distance": 7.24
+        },
+        {
+          "shift": -2,
+          "n": 11,
+          "mean_CA_distance": 5.18
+        },
+        {
+          "shift": -1,
+          "n": 11,
+          "mean_CA_distance": 3.27
+        },
+        {
+          "shift": 0,
+          "n": 11,
+          "mean_CA_distance": 2.83
+        },
+        {
+          "shift": 1,
+          "n": 11,
+          "mean_CA_distance": 5.58
+        },
+        {
+          "shift": 2,
+          "n": 11,
+          "mean_CA_distance": 7.74
+        },
+        {
+          "shift": 3,
+          "n": 11,
+          "mean_CA_distance": 9.24
+        }
+      ]
+    },
+    {
+      "eukaryote": "2RGL",
+      "prokaryote": "1QOX",
+      "structural_map": [
+        {
+          "euk": "SER356",
+          "euk_hmm": 331,
+          "prok": "ILE326",
+          "prok_hmm": 331,
+          "ca_distance": 0.97
+        },
+        {
+          "euk": "ASN357",
+          "euk_hmm": 332,
+          "prok": "GLY327",
+          "prok_hmm": 332,
+          "ca_distance": 2.13
+        },
+        {
+          "euk": "TRP358",
+          "euk_hmm": 333,
+          "prok": "TRP328",
+          "prok_hmm": 333,
+          "ca_distance": 3.43
+        },
+        {
+          "euk": "LEU359",
+          "euk_hmm": 334,
+          "prok": "TRP328",
+          "prok_hmm": 333,
+          "ca_distance": 1.86
+        },
+        {
+          "euk": "TYR360",
+          "euk_hmm": 335,
+          "prok": "GLU329",
+          "prok_hmm": 334,
+          "ca_distance": 1.39
+        },
+        {
+          "euk": "ILE361",
+          "euk_hmm": 336,
+          "prok": "ILE330",
+          "prok_hmm": 335,
+          "ca_distance": 1.6
+        },
+        {
+          "euk": "VAL362",
+          "euk_hmm": null,
+          "prok": "TYR331",
+          "prok_hmm": 336,
+          "ca_distance": 1.5
+        },
+        {
+          "euk": "PRO363",
+          "euk_hmm": 337,
+          "prok": "ALA332",
+          "prok_hmm": 337,
+          "ca_distance": 1.18
+        },
+        {
+          "euk": "TRP364",
+          "euk_hmm": 338,
+          "prok": "GLU333",
+          "prok_hmm": 338,
+          "ca_distance": 1.08
+        }
+      ],
+      "segment_eukaryote": [
+        {
+          "hmm": 330,
+          "resid": 355,
+          "res": "ASN"
+        },
+        {
+          "hmm": 331,
+          "resid": 356,
+          "res": "SER"
+        },
+        {
+          "hmm": 332,
+          "resid": 357,
+          "res": "ASN"
+        },
+        {
+          "hmm": 333,
+          "resid": 358,
+          "res": "TRP"
+        },
+        {
+          "hmm": 334,
+          "resid": 359,
+          "res": "LEU"
+        },
+        {
+          "hmm": 335,
+          "resid": 360,
+          "res": "TYR"
+        },
+        {
+          "hmm": 336,
+          "resid": 361,
+          "res": "ILE"
+        },
+        {
+          "hmm": 337,
+          "resid": 363,
+          "res": "PRO"
+        },
+        {
+          "hmm": 338,
+          "resid": 364,
+          "res": "TRP"
+        },
+        {
+          "hmm": 339,
+          "resid": 365,
+          "res": "GLY"
+        },
+        {
+          "hmm": 340,
+          "resid": 366,
+          "res": "MET"
+        }
+      ],
+      "segment_prokaryote": [
+        {
+          "hmm": 330,
+          "resid": 325,
+          "res": "ASP"
+        },
+        {
+          "hmm": 331,
+          "resid": 326,
+          "res": "ILE"
+        },
+        {
+          "hmm": 332,
+          "resid": 327,
+          "res": "GLY"
+        },
+        {
+          "hmm": 333,
+          "resid": 328,
+          "res": "TRP"
+        },
+        {
+          "hmm": 334,
+          "resid": 329,
+          "res": "GLU"
+        },
+        {
+          "hmm": 335,
+          "resid": 330,
+          "res": "ILE"
+        },
+        {
+          "hmm": 336,
+          "resid": 331,
+          "res": "TYR"
+        },
+        {
+          "hmm": 337,
+          "resid": 332,
+          "res": "ALA"
+        },
+        {
+          "hmm": 338,
+          "resid": 333,
+          "res": "GLU"
+        },
+        {
+          "hmm": 339,
+          "resid": 334,
+          "res": "GLY"
+        },
+        {
+          "hmm": 340,
+          "resid": 335,
+          "res": "LEU"
+        }
+      ],
+      "shift_scan": [
+        {
+          "shift": -3,
+          "n": 11,
+          "mean_CA_distance": 7.27
+        },
+        {
+          "shift": -2,
+          "n": 11,
+          "mean_CA_distance": 5.24
+        },
+        {
+          "shift": -1,
+          "n": 11,
+          "mean_CA_distance": 3.35
+        },
+        {
+          "shift": 0,
+          "n": 11,
+          "mean_CA_distance": 2.37
+        },
+        {
+          "shift": 1,
+          "n": 11,
+          "mean_CA_distance": 5.09
+        },
+        {
+          "shift": 2,
+          "n": 11,
+          "mean_CA_distance": 7.47
+        },
+        {
+          "shift": 3,
+          "n": 11,
+          "mean_CA_distance": 8.96
+        }
+      ]
+    }
+  ]
+}

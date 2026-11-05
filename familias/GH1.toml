@@ -1,0 +1,98 @@
+# Configuración de la familia GH1. Todo lo que el pipeline necesita saber de ella.
+family = "GH1"
+pfam = "PF00232"
+hmm_release = "32.0"                          # Pfam de 2020: PF00232.18, 453 columnas. Da la numeración de la salida.
+interpro = "IPR001360"                       # Glycoside hydrolase, family 1: recoge 60 de las 66 estructuras de 2020
+interpro_pdbe = ["IPR001360", "IPR017853"]   # mapeos de PDBe usados para elegir la cadena si no hay mapeo Pfam
+reference_pdb = "3SCU"
+reference_chain = "A"     # cadena de proteína de la referencia (2020 solo miraba la A)
+reference_domain = "Eukaryota"
+catalytic_residues = ["GLU", "GLU"]   # un nombre por residuo de referencia; el 3SCU es mutante (E386G) y no sirve de patrón
+min_positions = 250       # residuos con posición HMM que exige una cadena para entrar
+ligand = "CE5"            # nombre del sustrato en 2020: celopentaosa
+ligand_file = "CE5_GH1"   # fichero en Tfm/EASiMap/Ligandos (y el mismo con sufijo _1, ya en el marco)
+
+[substrate]
+# Tres átomos fijan el marco: origen, un punto sobre el eje y, y un punto del plano xy con x > 0.
+# En el 3SCU actual la celopentaosa son los BGC 1 a 5 de la cadena C.
+# El anillo -1 es el BGC 5 (extremo no reductor). El BGC 4 aporta el oxígeno glicosídico.
+origin  = { chain = "C", resseq = 5, resname = "BGC", atom = "C1" }   # C1 del anillo -1
+y_axis  = { chain = "C", resseq = 4, resname = "BGC", atom = "O4" }   # O4 del anillo +1
+x_plane = { chain = "C", resseq = 5, resname = "BGC", atom = "C4" }   # C4 del anillo -1
+
+[replica2020]
+# Residuos catalíticos en la numeración HMM de 2020: 165 y 360.
+reference_positions_2020 = [165, 360]
+# Los mismos residuos en el 3SCU, con la numeración del PDB (resid).
+# Se dedujeron de la tabla de 2020: la fila con posición 165 es el resid 176; la de 360, el 386.
+reference_resids = [176, 386]
+# Proteínas de 2020: lista de CAZy, con el reino anotado entonces (A arqueas, B bacterias, E eucariotas, U sin dato).
+
+[replica2020.proteins]
+# código PDB = reino. 3SCU es la referencia y no figura en la lista de CAZy.
+3SCU = "Bacteria"
+4HA3 = "Archaea"
+3APG = "Archaea"
+1VFF = "Archaea"
+1GOW = "Archaea"
+1QVB = "Archaea"
+6RJK = "Bacteria"
+1QOX = "Bacteria"
+5YHS = "Bacteria"
+3AHX = "Bacteria"
+2XHY = "Bacteria"
+5DT5 = "Bacteria"
+4ZE4 = "Bacteria"
+3TA9 = "Bacteria"
+5OGZ = "Bacteria"
+5NAQ = "Bacteria"
+3QOM = "Bacteria"
+1PBG = "Bacteria"
+4R27 = "Bacteria"
+3W53 = "Bacteria"
+1BGA = "Bacteria"
+2JIE = "Bacteria"
+3PN8 = "Bacteria"
+4IPL = "Bacteria"
+4B3K = "Bacteria"
+1GNX = "Bacteria"
+1OD0 = "Bacteria"
+5IDI = "Bacteria"
+1NP2 = "Bacteria"
+1UG6 = "Bacteria"
+3ZJK = "Bacteria"
+5GNX = "Bacteria"
+6IER = "Bacteria"
+6JFP = "Bacteria"
+3CMJ = "Bacteria"
+1WCG = "Eukaryota"
+3WQ4 = "Eukaryota"
+5W21 = "Eukaryota"
+2E9L = "Eukaryota"
+5VAN = "Eukaryota"
+5VAK = "Eukaryota"
+4MDO = "Eukaryota"
+5YJ7 = "Eukaryota"
+3AHZ = "Eukaryota"
+4JHO = "Eukaryota"
+3GNO = "Eukaryota"
+3PTK = "Eukaryota"
+2RGL = "Eukaryota"
+2E3Z = "Eukaryota"
+2JF6 = "Eukaryota"
+3U57 = "Eukaryota"
+3AIU = "Eukaryota"
+1DWA = "Eukaryota"
+1V02 = "Eukaryota"
+5CG0 = "Eukaryota"
+5JBO = "Eukaryota"
+5BWF = "Eukaryota"
+3AHY = "Eukaryota"
+1CBG = "Eukaryota"
+2DGA = "Eukaryota"
+1HXJ = "Eukaryota"
+1E1E = "Eukaryota"
+5XGZ = "Unknown"
+5WKA = "Unknown"
+5NS6 = "Unknown"
+3WH5 = "Unknown"

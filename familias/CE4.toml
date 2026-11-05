@@ -1,0 +1,32 @@
+# Configuración de la familia CE4. Todo lo que el pipeline necesita saber de ella.
+family = "CE4"
+pfam = "PF01522"                              # Polysaccharide deacetylase (dominio NodB); InterPro: IPR002509
+hmm_release = "32.0"                          # PF01522.21, 124 columnas (no reproduce la numeración de la tabla)
+interpro = "IPR002509"                        # NodB homology domain
+interpro_pdbe = ["IPR002509", "IPR011330"]
+reference_pdb = "4OUI"                        # desacetilasa de quitina DA1 de Vibrio cholerae, mutante D35S, con quitotriosa
+reference_chain = "A"
+reference_domain = "Bacteria"
+# Triada que une el metal en CE4 (CAZypedia): Asp, His, His. Los tres residuos de 2020 son Asp, His y His en 17 de 19 proteínas.
+# El 4OUI es mutante en el Asp (D35S, resid 39 con la numeración del PDB).
+catalytic_residues = ["ASP", "HIS", "HIS"]
+min_positions = 68                            # 55 % de las 124 columnas
+ligand = "quitotriosa"                        # NAG x 3 del 4OUI (cadena C); en 2020 el fichero era CTO_CE4
+ligand_file = "CTO_CE4"
+
+[substrate]
+# Marco de 2020, deducido de CTO_CE4.pdb y CTO_CE4_1.pdb (error 0,0005 Å); coordenadas idénticas a las del 4OUI.
+# Origen en el C1 del NAG 3, eje y hacia el O4 del NAG 2, eje x hacia la proyección del C4 del NAG 3.
+origin  = { chain = "C", resseq = 3, resname = "NAG", atom = "C1" }
+y_axis  = { chain = "C", resseq = 2, resname = "NAG", atom = "O4" }
+x_plane = { chain = "C", resseq = 3, resname = "NAG", atom = "C4" }
+
+[replica2020]
+reference_positions_2020 = [8, 64, 163]
+reference_resids = [39, 97, 295]              # Ser39 (mutante D35S), His97 e His295 en el 4OUI
+numbering_2020 = false                        # PF01522.21 no da las columnas de la tabla de 2020
+# Proteínas de la tabla de 2020 (easimap/familias/CE4.tsv): 19 códigos.
+proteins = [
+  "4OUI", "6HM9", "2J13", "4M1B", "4L1G", "5NCD", "1NY1", "6H8L", "5JMU", "2C71", "2W3Z", "2C1G", "2CC0", "4NY2",
+  "4NZ5", "3WX7", "2Y8U", "2IW0", "2VYO",
+]

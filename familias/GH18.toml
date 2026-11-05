@@ -1,0 +1,37 @@
+# Configuración de la familia GH18. Todo lo que el pipeline necesita saber de ella.
+family = "GH18"
+pfam = "PF00704"                              # Glycosyl hydrolases family 18; InterPro la integra en IPR001223
+hmm_release = "32.0"                          # PF00704.28, 312 columnas (no reproduce la numeración de la tabla)
+interpro = "IPR001223"                        # Glycoside hydrolase family 18, catalytic domain
+interpro_pdbe = ["IPR001223", "IPR017853"]
+reference_pdb = "1E6N"                        # quitinasa B de Serratia marcescens, mutante inactivo E144Q, con quitopentaosa
+reference_chain = "A"
+reference_domain = "Bacteria"
+# Motivo D-x-D-x-E (PROSITE PDOC00839, Vaaje-Kolstad 2004): el Glu es el ácido catalítico; el Asp central cambia de
+# conformación durante la catálisis. El 1E6N es mutante en el Glu (E144Q): el patrón sale del motivo.
+catalytic_residues = ["ASP", "ASP", "GLU"]
+min_positions = 172                           # 55 % de las 312 columnas
+ligand = "quitopentaosa"                      # NAG x 5 del 1E6N (cadena C); en 2020 el fichero era NAG
+ligand_file = "NAG"
+
+[substrate]
+# Marco de 2020, deducido de NAG.pdb y NAG_1.pdb (error 0,0006 Å); coordenadas idénticas a las del 1E6N.
+# Origen en el C1 del NAG 4 (anillo -1), eje y hacia el O4 del NAG 3 (anillo +1: oxígeno del enlace beta-1,4),
+# eje x hacia la proyección del C4 del NAG 4.
+origin  = { chain = "C", resseq = 4, resname = "NAG", atom = "C1" }
+y_axis  = { chain = "C", resseq = 3, resname = "NAG", atom = "O4" }
+x_plane = { chain = "C", resseq = 4, resname = "NAG", atom = "C4" }
+
+[replica2020]
+reference_positions_2020 = [125, 127, 129]
+reference_resids = [140, 142, 144]            # Asp140, Asp142 y Gln144 en el 1E6N
+numbering_2020 = false                        # PF00704.28 no da las columnas de la tabla de 2020
+# Proteínas de la tabla de 2020 (easimap/familias/GH18.tsv): 82 códigos.
+proteins = [
+  "1E6N", "2DSK", "1KFW", "5KZ6", "4S3J", "1ITX", "4S3K", "3CZ8", "6BT9", "6Q64", "3CO4", "3POH", "4TXG", "5JH8",
+  "4TX8", "4WIW", "2EBN", "1EOK", "3QOK", "3IAN", "4HMC", "6INX", "4Q6T", "1CTN", "1E15", "4AXN", "1H0G", "5ZL9",
+  "6EN3", "4NUY", "6E58", "3EBV", "1C3F", "3ARO", "3OA5", "4DWS", "3AQU", "2Y8V", "1W9P", "2XTK", "1WNO", "6IGY",
+  "1OWQ", "1SV8", "4S06", "1CNV", "1LJY", "3G6L", "1D2K", "6KPL", "3SIM", "3WIJ", "1JND", "1HVQ", "4AY1", "1GUV",
+  "1HJV", "2YBT", "5XEP", "1E9L", "3ALF", "5Y29", "5Y2A", "5GPR", "3W4R", "5WUP", "5WUS", "1R2V", "2GSJ", "4RL3",
+  "4TOQ", "5XWQ", "3O9N", "3D5H", "3MU7", "1XHG", "4B15", "6EPB", "6G9E", "1OM0", "1NAR", "5DEZ",
+]

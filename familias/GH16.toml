@@ -1,0 +1,40 @@
+# Configuración de la familia GH16. Todo lo que el pipeline necesita saber de ella.
+family = "GH16"
+pfam = "PF00722"                              # Glycosyl hydrolases family 16; InterPro la integra en IPR000757
+hmm_release = "32.0"                          # PF00722.21, 177 columnas: la posición máxima de la tabla de 2020 es 177
+interpro = "IPR000757"                        # Beta-glucanase-like, N-terminal domain
+interpro_pdbe = ["IPR000757", "IPR008985"]    # mapeos de PDBe para elegir la cadena (IPR008985: superfamilia ConA-like)
+reference_pdb = "4ATF"                        # beta-agarasa B de Zobellia galactanivorans, mutante inactivo E189D, con agarooctaosa
+reference_chain = "A"
+reference_domain = "Bacteria"
+# Motivo E-x-D-x-E (CAZypedia GH16): el primer Glu es el nucleófilo y el último el ácido/base.
+# El 4ATF es mutante en el último (Glu189 por Asp), así que el patrón sale del motivo y no de la referencia.
+catalytic_residues = ["GLU", "ASP", "GLU"]
+min_positions = 97                            # 55 % de las 177 columnas, la misma proporción que GH1
+ligand = "agarooctaosa"                       # Gal y 3,6-anhidro-Gal alternos del 4ATF; en 2020 el fichero era GAL_GH16
+ligand_file = "GAL_GH16"
+
+[substrate]
+# Marco de 2020, deducido de GAL_GH16.pdb y GAL_GH16_1.pdb (error 0,0005 Å); coordenadas idénticas a las de la cadena E del 4ATF.
+# Origen en el C1 del GAL 5 (anillo -1, el beta-D-Gal que se corta), eje y hacia el O4 del AAL 4 (anillo +1: es el oxígeno
+# del enlace beta-1,4 que rompe la enzima), eje x hacia la proyección del C4 del GAL 5.
+origin  = { chain = "E", resseq = 5, resname = "GAL", atom = "C1" }
+y_axis  = { chain = "E", resseq = 4, resname = "AAL", atom = "O4" }
+x_plane = { chain = "E", resseq = 5, resname = "GAL", atom = "C4" }
+
+[replica2020]
+# Residuos de referencia en la numeración HMM de 2020: 73, 75 y 77 (tabla de GH16).
+reference_positions_2020 = [73, 75, 77]
+# Los mismos residuos en el 4ATF (resid del PDB), con PF00722.21 de Pfam 32.0: Glu184, Asp186 y Asp189.
+reference_resids = [184, 186, 189]
+# En el 4ATF el Glu184 tiene dos conformaciones. VMD cargaba las dos (16 átomos de ajuste en la referencia, 12 en las demás)
+# y la tabla de 2020 solo se reproduce con un átomo por nombre, el último del fichero ("last"): mediana 0,000002 Å.
+# Con el primero ("first") la mediana es 0,047 Å, justo bajo el límite, y 4820 pares se alejan más de 0,05 Å.
+fit_altloc = "last"
+# Proteínas de la tabla de 2020 (easimap/familias/GH16.tsv): 44 códigos.
+proteins = [
+  "4ATF", "2VY0", "6JHJ", "1GBG", "3O5S", "5NBO", "4AWD", "5T9X", "3ATG", "1UPS", "1MVE", "5WUT", "3WVJ", "3WZ1",
+  "4XXP", "4PQ9", "4WZF", "5DXD", "4W65", "3RQ0", "4XDQ", "2HYK", "1AJK", "6AII", "1DYP", "3ILN", "3DGT", "3AZX",
+  "4DFS", "3I4I", "5OCR", "3JUU", "3ILF", "6HY3", "4CRQ", "1O4Z", "1O4Y", "6IBU", "5NDL", "3WDT", "2CL2", "1UMZ",
+  "2UWA", "5DZE",
+]

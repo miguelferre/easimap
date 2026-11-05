@@ -1,0 +1,57 @@
+{
+  "familia": "CE4",
+  "filas_2020": 5029,
+  "proteinas_2020": 19,
+  "variantes": {
+    "pfam32.0_local": {
+      "descripcion": "PF01522 de Pfam 32.0, alineamiento local",
+      "error": "el resid 295 de la referencia no cae en una columna del HMM"
+    },
+    "tabla_2020": {
+      "descripcion": "posiciones de la propia tabla de 2020 (sin HMM): prueba el marco y la superposición",
+      "columnas_referencia": [
+        8,
+        64,
+        163
+      ],
+      "proteinas_reproducidas": 19,
+      "omitidas": {},
+      "en_tabla_2020_y_no_reproducidas": [],
+      "sin_emparejar": {},
+      "pares": 5029,
+      "error_mediana_A": 8.580174396044526e-05,
+      "error_p90_A": 0.000250152865323372,
+      "error_p99_A": 0.11617800166184827,
+      "error_max_A": 0.8688165284264429,
+      "mediana_por_proteina": {
+        "4OUI": 8.050561213224228e-07,
+        "6HM9": 8.89180717802418e-05,
+        "2J13": 0.00010626706957594934,
+        "4M1B": 8.76573609920328e-05,
+        "4L1G": 9.674075232624091e-05,
+        "5NCD": 0.00010358103065666313,
+        "1NY1": 8.807981167535672e-05,
+        "6H8L": 9.462783861913238e-05,
+        "5JMU": 9.708326722712712e-05,
+        "2C71": 0.00011283387350147223,
+        "2W3Z": 9.318252853240949e-05,
+        "2C1G": 9.423324758550677e-05,
+        "2CC0": 0.0001229695237423556,
+        "4NY2": 0.0001040958968046013,
+        "4NZ5": 0.00010346884466905237,
+        "3WX7": 8.816737329375712e-05,
+        "2Y8U": 0.00010294655571385647,
+        "2IW0": 8.555696757461817e-05,
+        "2VYO": 8.771601972501486e-05
+      }
+    },
+    "actual_local": {
+      "descripcion": "PF01522 vigente, alineamiento local",
+      "error": "el resid 295 de la referencia no cae en una columna del HMM"
+    },
+    "actual_glocal": {
+      "descripcion": "PF01522 vigente, alineamiento glocal (hmmalign de pyhmmer)",
+      "error": "el resid 295 de la referencia no cae en una columna del HMM"
+    }
+  }
+}

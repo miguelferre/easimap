@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EASiMap: the sky inside an enzyme</title>
+<meta name="description" content="A celestial atlas of enzyme families. Stand on the sugar at the centre of the enzyme and look up: every star is an amino acid.">
+<meta name="theme-color" content="#080c16">
+<meta property="og:title" content="EASiMap: the sky inside an enzyme">
+<meta property="og:description" content="A celestial atlas of enzyme families. Every star is an amino acid.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080c16'/%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23d8b46a' stroke-width='1.2'/%3E%3Cpath d='M16 7l1.6 7.4L25 16l-7.4 1.6L16 25l-1.6-7.4L7 16l7.4-1.6z' fill='%23ece4d2'/%3E%3C/svg%3E">
+<link rel="preload" href="data/gh1.json?v=a6b70469ab" as="fetch" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=a6b70469ab">
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous" defer></script>
+<script>
+(function () {
+  var v = window.EASIMAP_V = 'a6b70469ab', b = new URL('js/', location.href).href, m = { imports: {} };
+  ['core', 'i18n', 'hero', 'metaphor', 'family', 'skies', 'idea', 'guide', 'stories', 'explorer', 'mol'].forEach(function (f) { m.imports[b + f + '.js'] = b + f + '.js?v=' + v; });
+  var s = document.createElement('script'); s.type = 'importmap'; s.textContent = JSON.stringify(m); document.currentScript.after(s);
+})();
+</script>
+<script type="module" src="js/main.js?v=a6b70469ab"></script>
+</head>
+<body data-page="home">
+<a class="skip" href="#metaphor" data-t="skip"></a>
+
+<header class="bar">
+  <a class="mark" href="#top" aria-label="EASiMap">EASi<span>Map</span></a>
+  <nav class="bar-nav" aria-label="Sections" data-t-aria="nav_label">
+    <a href="#metaphor" data-t="nav_idea"></a>
+    <a href="#family" data-t="nav_family"></a>
+    <a href="#six" data-t="nav_six"></a>
+    <a href="#read" data-t="nav_read"></a>
+    <a href="#use" data-t="nav_use"></a>
+    <a href="#stories" data-t="nav_stories"></a>
+    <a href="#method" data-t="nav_method"></a>
+  </nav>
+  <a class="bar-cta" href="visor.html" data-t="nav_viewer"></a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+</header>
+
+<main>
+
+<!-- I. Portada -->
+<section class="hero" id="top">
+  <canvas id="hero-base" aria-hidden="true"></canvas>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-copy">
+    <p class="eyebrow" data-t="hero_eyebrow"></p>
+    <h1 data-t="hero_title"></h1>
+    <p class="lead" data-t="hero_lead"></p>
+    <p class="hero-actions">
+      <a class="btn btn-main" href="visor.html" data-t="hero_cta"></a>
+      <a class="btn" href="#metaphor" data-t="hero_cta2"></a>
+    </p>
+  </div>
+  <div class="hero-foot">
+    <p class="hero-caption" id="hero-caption"></p>
+    <p class="hero-now">
+      <span id="hero-now" class="num"></span>
+      <button type="button" id="hero-pause" class="linkish" aria-pressed="false" data-t="hero_pause"></button>
+    </p>
+  </div>
+  <div class="hero-readout" id="hero-readout" hidden></div>
+</section>
+
+<!-- II. Dos cielos -->
+<section class="metaphor" id="metaphor" aria-labelledby="metaphor-h">
+  <header class="plate-head">
+    <p class="plate-no"><span data-t="plate"></span> <b>II</b></p>
+    <h2 id="metaphor-h" data-t="tw_title"></h2>
+    <p class="plate-sub" data-t="tw_sub"></p>
+  </header>
+  <div class="twin">
+    <figure>
+      <canvas id="sky-earth" role="img" data-t-aria="tw1_label"></canvas>
+      <figcaption><h3 data-t="tw1_t"></h3><p data-t="tw1_p"></p></figcaption>
+    </figure>
+    <figure>
+      <canvas id="sky-enzyme" role="img" data-t-aria="tw2_label"></canvas>
+      <figcaption><h3 data-t="tw2_t"></h3><p id="sky-enzyme-cap"></p></figcaption>
+    </figure>
+  </div>
+  <div class="rosetta-box"><table class="rosetta" id="rosetta"></table></div>
+</section>
+
+<!-- III. La familia -->
+<section class="family" id="family" aria-labelledby="family-h">
+  <header class="plate-head">
+    <p class="plate-no"><span data-t="plate"></span> <b>III</b></p>
+    <h2 id="family-h" data-t="fam_title"></h2>
+    <p class="plate-sub" data-t="fam_sub"></p>
+  </header>
+  <div class="fam-grid">
+    <div class="fam-text">
+      <h3 data-t="fam_what_t"></h3>
+      <p data-t="fam_what_1"></p>
+      <p data-t="fam_what_2"></p>
+    </div>
+    <figure class="fam-fig">
+      <div id="fam-fig"></div>
+      <figcaption id="fam-cap"></figcaption>
+    </figure>
+  </div>
+  <div class="fam-why">
+    <h3 data-t="fam_why_t"></h3>
+    <dl>
+      <div><dt data-t="why1_t"></dt><dd data-t="why1_p"></dd></div>
+      <div><dt data-t="why2_t"></dt><dd data-t="why2_p"></dd></div>
+      <div><dt data-t="why3_t"></dt><dd data-t="why3_p"></dd></div>
+    </dl>
+  </div>
+  <div class="fam-many">
+    <h3 data-t="sk_title"></h3>
+    <p class="fam-many-sub"><span data-t="sk_sub"></span> <span id="fam-count"></span></p>
+    <div class="skies" id="fam-skies"></div>
+  </div>
+</section>
+
+<!-- IV. Cinco cielos -->
+<section class="six" id="six" aria-labelledby="six-h">
+  <header class="plate-head">
+    <p class="plate-no"><span data-t="plate"></span> <b>IV</b></p>
+    <h2 id="six-h" data-t="six_title"></h2>
+    <p class="plate-sub" data-t="six_sub"></p>
+  </header>
+  <div class="six-grid" id="six-grid"></div>
+  <div class="six-honest">
+    <h3 data-t="six_honest_t"></h3>
+    <p id="six-frank"></p>
+    <div class="table-scroll" tabindex="0" role="region" data-t-aria="six_honest_t"><table id="six-table"></table></div>
+    <p class="hint" data-t="six_note"></p>
+  </div>
+</section>
+
+<!-- V. La idea -->
+<section class="idea" id="idea" aria-labelledby="idea-h">
+  <header class="plate-head">
+    <p class="plate-no"><span data-t="plate"></span> <b>V</b></p>
+    <h2 id="idea-h" data-t="idea_title"></h2>
+  </header>
+  <div class="idea-grid">
+    <div class="idea-stage">
+      <canvas id="idea-canvas" role="img" data-t-aria="idea_canvas_label"></canvas>
+      <p class="idea-tag" id="idea-tag"></p>
+    </div>
+    <ol class="idea-steps" id="idea-steps">
+      <li class="step"><div><span class="step-n">1</span><h3 data-t="s1_t"></h3><p data-t="s1_p"></p></div></li>
+      <li class="step"><div><span class="step-n">2</span><h3 data-t="s2_t"></h3><p data-t="s2_p"></p></div></li>
+      <li class="step"><div><span class="step-n">3</span><h3 data-t="s3_t"></h3><p data-t="s3_p"></p></div></li>
+      <li class="step"><div><span class="step-n">4</span><h3 data-t="s4_t"></h3><p data-t="s4_p"></p></div></li>
+      <li class="step"><div><span class="step-n">5</span><h3 data-t="s5_t"></h3><p data-t="s5_p"></p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- VI. Cómo se lee -->
+<section class="guide" id="read" aria-labelledby="read-h">
+  <header class="plate-head">
+    <p class="plate-no"><span data-t="plate"></span> <b>VI</b></p>
+    <h2 id="read-h" data-t="read_title"></h2>
+    <p class="plate-sub" data-t="read_sub"></p>
+  </header>
+  <div class="guide-grid">
+    <figure class="guide-fig">
+      <canvas id="guide-canvas" role="img" data-t-aria="read_fig_label"></canvas>
+      <figcaption data-t="read_fig_cap"></figcaption>
+    </figure>
+    <ol class="keys">
+      <li><span class="key-n">1</span><div><h3 data-t="k1_t"></h3><p data-t="k1_p"></p></div></li>
+      <li><span class="key-n">2</span><div><h3 data-t="k2_t"></h3><p data-t="k2_p"></p></div></li>
+      <li><span class="key-n">3</span><div><h3 data-t="k3_t"></h3><p id="k3-p"></p></div></li>
+      <li><span class="key-n">4</span><div><h3 data-t="k4_t"></h3><p id="k4-p"></p></div></li>
+      <li><span class="key-n">5</span><div><h3 data-t="k5_t"></h3><p id="k5-p"></p></div></li>
+      <li class="key-plain"><span class="key-n"></span><div><h3 data-t="k6_t"></h3><p data-t="k6_p"></p><div class="legend" id="k6-leg"></div></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- VII. Cómo se usa -->
+<section class="use" id="use" aria-labelledby="use-h">
+  <header class="plate-head">
+    <p class="plate-no"><span data-t="plate"></span> <b>VII</b></p>
+    <h2 id="use-h" data-t="use_title"></h2>
+    <p class="plate-sub" data-t="use_sub"></p>
+  </header>
+  <div class="use-body">
+    <div class="use-grid">
+      <figure><canvas id="use-1" aria-hidden="true"></canvas><figcaption><h3 data-t="u1_t"></h3><p data-t="u1_p"></p></figcaption></figure>
+      <figure><canvas id="use-2" aria-hidden="true"></canvas><figcaption><h3 data-t="u2_t"></h3><p data-t="u2_p"></p></figcaption></figure>
+      <figure><canvas id="use-3" aria-hidden="true"></canvas><figcaption><h3 data-t="u3_t"></h3><p data-t="u3_p"></p></figcaption></figure>
+    </div>
+    <div class="how">
+      <div>
+        <h3 class="how-t" data-t="how_t"></h3>
+        <ol class="how-steps" id="how-steps"></ol>
+      </div>
+      <div>
+        <h3 class="how-t" data-t="ctl_t"></h3>
+        <dl class="controls" id="controls"></dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIII. Historias -->
+<section class="stories" id="stories" aria-labelledby="stories-h">
+  <header class="plate-head">
+    <p class="plate-no"><span data-t="plate"></span> <b>VIII</b></p>
+    <h2 id="stories-h" data-t="stories_title"></h2>
+  </header>
+
+  <article class="story story-333" id="story-333">
+    <div class="story-fig">
+      <figure id="fig-333"></figure>
+      <div class="legend" id="leg-333"></div>
+    </div>
+    <div class="story-text">
+      <h3 data-t="st1_t"></h3>
+      <p id="st1-p1"></p>
+      <p id="st1-p2"></p>
+      <p id="st1-p3"></p>
+      <p id="st1-p4"></p>
+      <div class="note"><strong data-t="limit"></strong> <span id="st1-limit"></span></div>
+      <p><a class="btn" href="visor.html#sky?dmax=45&amp;pos=333&amp;color=domain&amp;res=TRP" data-t="st1_open"></a></p>
+    </div>
+    <div class="story-offset">
+      <h4 data-t="st1b_t"></h4>
+      <p id="st1b-p"></p>
+      <figure id="fig-offset"></figure>
+      <div class="note note-hyp"><strong data-t="measured"></strong> <span id="st1b-hyp"></span></div>
+      <div class="note"><strong data-t="limit"></strong> <span data-t="st1b_limit"></span></div>
+      <details class="tablebox">
+        <summary data-t="tbl_fig"></summary>
+        <div class="table-scroll" tabindex="0" role="region" data-t-aria="tbl_fig"><table id="tbl-333"></table></div>
+      </details>
+    </div>
+  </article>
+
+  <article class="story story-horizon" id="story-horizon">
+    <div class="story-text">
+      <h3 data-t="st2_t"></h3>
+      <p data-t="st2_p1"></p>
+      <p id="st2-p2"></p>
+      <div class="note"><strong data-t="limit"></strong> <span data-t="st2_limit"></span></div>
+    </div>
+    <div class="story-fig">
+      <div class="horizon-pair" id="fig-horizon"></div>
+      <div class="legend" id="leg-horizon"></div>
+      <details class="tablebox">
+        <summary data-t="tbl_fig"></summary>
+        <div class="table-scroll" tabindex="0" role="region" data-t-aria="tbl_fig"><table id="tbl-horizon"></table></div>
+      </details>
+    </div>
+  </article>
+</section>
+
+<!-- IX. Método -->
+<section class="method" id="method" aria-labelledby="method-h">
+  <header class="plate-head">
+    <p class="plate-no"><span data-t="plate"></span> <b>IX</b></p>
+    <h2 id="method-h" data-t="method_title"></h2>
+  </header>
+  <div class="colophon">
+    <div class="col-lead">
+      <p id="m-data"></p>
+      <p id="m-replica"></p>
+      <p id="m-families"></p>
+      <p data-t="m_frame"></p>
+      <p data-t="m_claim"></p>
+    </div>
+    <dl class="col-list" id="m-list"></dl>
+  </div>
+</section>
+
+<!-- Cierre -->
+<section class="finale" aria-labelledby="finale-h">
+  <canvas id="finale-canvas" aria-hidden="true"></canvas>
+  <div class="finale-copy">
+    <h2 id="finale-h" data-t="fin_t"></h2>
+    <p data-t="fin_p"></p>
+    <p><a class="btn btn-main btn-big" href="visor.html" data-t="fin_cta"></a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p data-t="foot"></p>
+  <p class="num" id="foot-data"></p>
+</footer>
+
+<noscript><p class="noscript">EASiMap needs JavaScript to draw its maps. EASiMap necesita JavaScript para dibujar los mapas.</p></noscript>
+</body>
+</html>

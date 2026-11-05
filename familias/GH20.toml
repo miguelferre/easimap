@@ -1,0 +1,33 @@
+# Configuración de la familia GH20. Todo lo que el pipeline necesita saber de ella.
+family = "GH20"
+pfam = "PF00728"                              # Glycosyl hydrolase family 20, catalytic domain; InterPro: IPR015883
+hmm_release = "32.0"                          # PF00728.22, 354 columnas (no reproduce la numeración de la tabla)
+interpro = "IPR015883"                        # Beta-hexosaminidase, catalytic domain
+interpro_pdbe = ["IPR015883", "IPR017853"]
+reference_pdb = "1C7S"                        # beta-N-acetilhexosaminidasa (quitobiasa) de Serratia marcescens, mutante D539A
+reference_chain = "A"
+reference_domain = "Bacteria"
+# El Asp es el residuo que estabiliza el oxazolinio y el Glu el ácido/base (mecanismo con ayuda del sustrato en GH20).
+# El 1C7S es mutante en el Asp (D539A): el patrón sale de la tabla de 2020 (17 de 17 proteínas con Asp y 19 de 19 con Glu).
+catalytic_residues = ["ASP", "GLU"]
+min_positions = 195                           # 55 % de las 354 columnas
+ligand = "quitobiosa"                         # NAG-NAG del 1C7S (cadena B); en 2020 el fichero era CBS20
+ligand_file = "CBS20"
+
+[substrate]
+# Marco de 2020, deducido de CBS20.pdb y CBS20_1.pdb (error 0,0006 Å); coordenadas idénticas a las del 1C7S.
+# El fichero de 2020 junta los dos NAG en un residuo CBS. Origen en el C1 del NAG 2 (anillo -1), eje y hacia el
+# O4 del NAG 1 (en 2020 O1A del CBS), eje x hacia la proyección del C4 del NAG 2.
+origin  = { chain = "B", resseq = 2, resname = "NAG", atom = "C1" }
+y_axis  = { chain = "B", resseq = 1, resname = "NAG", atom = "O4" }
+x_plane = { chain = "B", resseq = 2, resname = "NAG", atom = "C4" }
+
+[replica2020]
+reference_positions_2020 = [280, 281]
+reference_resids = [539, 540]                 # Ala539 (mutante D539A) y Glu540 en el 1C7S
+numbering_2020 = false                        # PF00728.22 no da las columnas de la tabla de 2020
+# Proteínas de la tabla de 2020 (easimap/familias/GH20.tsv): 17 códigos.
+proteins = [
+  "1C7S", "1YHT", "6JQF", "6Q63", "4H04", "3RCN", "3GH4", "3RPM", "5A69", "2YL6", "2YL5", "4C7D", "1HP4", "6EZR",
+  "2GJX", "1NOU", "3NSM",
+]

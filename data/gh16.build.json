@@ -1,0 +1,485 @@
+{
+  "family": "GH16",
+  "date": "2026-11-04",
+  "hmm": "PF00722_pfam32.0.hmm",
+  "hmm_sha": "d719aa1773c1d7f3",
+  "skipped": {
+    "1AJO_1": "solo 90 residuos con posición HMM",
+    "1GUI_1": "solo 0 residuos con posición HMM",
+    "2CDO_1": "solo 0 residuos con posición HMM",
+    "2CDP_1": "solo 0 residuos con posición HMM",
+    "2CL2_1": "solo 0 residuos con posición HMM",
+    "2W39_1": "solo 0 residuos con posición HMM",
+    "2W52_1": "solo 0 residuos con posición HMM",
+    "2WLQ_1": "solo 0 residuos con posición HMM",
+    "2WNE_1": "solo 0 residuos con posición HMM",
+    "3AQX_1": "solo 0 residuos con posición HMM",
+    "3AQY_1": "solo 0 residuos con posición HMM",
+    "3AQZ_1": "solo 0 residuos con posición HMM",
+    "3IE4_1": "solo 0 residuos con posición HMM",
+    "3ILF_1": "solo 0 residuos con posición HMM",
+    "3WDT_1": "solo 59 residuos con posición HMM",
+    "3WDU_1": "solo 59 residuos con posición HMM",
+    "3WDV_1": "solo 59 residuos con posición HMM",
+    "3WDW_1": "solo 59 residuos con posición HMM",
+    "3WDX_1": "solo 59 residuos con posición HMM",
+    "3WDY_1": "solo 59 residuos con posición HMM",
+    "4ATE_1": "solo 0 residuos con posición HMM",
+    "5FUI_1": "solo 0 residuos con posición HMM",
+    "5JVV_1": "solo 79 residuos con posición HMM",
+    "6AII_1": "solo 0 residuos con posición HMM",
+    "6EUG_1": "solo 0 residuos con posición HMM",
+    "6EUH_1": "solo 0 residuos con posición HMM",
+    "6EUI_1": "solo 0 residuos con posición HMM",
+    "7QUZ_1": "solo 0 residuos con posición HMM",
+    "7R1N_1": "solo 0 residuos con posición HMM",
+    "7R3T_1": "solo 0 residuos con posición HMM",
+    "1U0A_1": "mutante catalítico (E105Q, E109Q; residuos ['GLN', 'ASP', 'GLN'])",
+    "1URX_1": "mutante catalítico (YES; residuos ['SER', 'ASP', 'GLU'])",
+    "4ATF_1": "mutante catalítico (YES; residuos ['GLU', 'ASP', 'ASP'])",
+    "4BOW_1": "mutante catalítico (YES; residuos ['SER', 'ASP', 'GLU'])",
+    "4BPZ_1": "mutante catalítico (YES; residuos ['SER', 'ASP', 'GLU'])",
+    "4CRQ_1": "mutante catalítico (YES; residuos ['GLU', 'ASP', 'MET'])",
+    "4CTE_1": "mutante catalítico (YES; residuos ['GLU', 'ASP', 'MET'])",
+    "5DZE_1": "mutante catalítico (E88A; residuos ['ALA', 'ASP', 'GLU'])",
+    "5DZF_1": "mutante catalítico (E88A; residuos ['ALA', 'ASP', 'GLU'])",
+    "5DZG_1": "mutante catalítico (E88A; residuos ['ALA', 'ASP', 'GLU'])",
+    "6M6P_1": "mutante catalítico (E135A; residuos ['ALA', 'ASP', 'GLU'])",
+    "7KR6_1": "mutante catalítico (E148A; residuos ['GLU', 'ASP', 'MET'])",
+    "8EW1_1": "mutante catalítico (E145L; residuos ['LEU', 'ASP', 'GLU'])",
+    "9VOO_1": "mutante catalítico (E120Q; residuos ['GLN', 'ASP', 'GLU'])"
+  },
+  "counts": {
+    "entidades con anotación InterPro IPR000757": 122,
+    "experimentales": 122,
+    "resolución de 3.0 Å o mejor": 119,
+    "entidades alineadas": 89,
+    "cadena por PDBe pfam": 34,
+    "cadena por PDBe interpro": 52,
+    "cadena = primera de la entidad": 3,
+    "sin mutante catalítico": 75,
+    "grupos al 90 % de identidad": 44,
+    "estructuras en la salida": 44,
+    "posiciones del núcleo": 64
+  },
+  "core_positions": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    54,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    134,
+    135,
+    136,
+    137
+  ],
+  "entries": [
+    {
+      "pdb": "1AJK",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Paenibacillus macerans",
+      "resolution": 1.8,
+      "residues": 115
+    },
+    {
+      "pdb": "1AXK",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacillus subtilis",
+      "resolution": 2.1,
+      "residues": 139
+    },
+    {
+      "pdb": "1DYP",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Pseudoalteromonas carrageenovora",
+      "resolution": 1.54,
+      "residues": 154
+    },
+    {
+      "pdb": "1GBG",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacillus licheniformis",
+      "resolution": 1.8,
+      "residues": 160
+    },
+    {
+      "pdb": "1O4Y",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Zobellia galactanivorans",
+      "resolution": 1.48,
+      "residues": 120
+    },
+    {
+      "pdb": "1O4Z",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Zobellia galactanivorans",
+      "resolution": 2.3,
+      "residues": 125
+    },
+    {
+      "pdb": "1UMZ",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Populus tremula",
+      "resolution": 1.8,
+      "residues": 175
+    },
+    {
+      "pdb": "1UPS",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Clostridium perfringens",
+      "resolution": 1.82,
+      "residues": 132
+    },
+    {
+      "pdb": "2AYH",
+      "chain": "A",
+      "domain": "Unknown",
+      "organism": "hybrid",
+      "resolution": 1.6,
+      "residues": 165
+    },
+    {
+      "pdb": "2HYK",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Nocardiopsis sp. F96",
+      "resolution": 1.3,
+      "residues": 166
+    },
+    {
+      "pdb": "2UWA",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Tropaeolum majus",
+      "resolution": 1.8,
+      "residues": 171
+    },
+    {
+      "pdb": "2VY0",
+      "chain": "A",
+      "domain": "Archaea",
+      "organism": "Pyrococcus furiosus",
+      "resolution": 2.16,
+      "residues": 168
+    },
+    {
+      "pdb": "3AZY",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Thermotoga maritima MSB8",
+      "resolution": 1.65,
+      "residues": 168
+    },
+    {
+      "pdb": "3DGT",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Streptomyces sioyaensis",
+      "resolution": 1.5,
+      "residues": 164
+    },
+    {
+      "pdb": "3H0O",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Fibrobacter succinogenes",
+      "resolution": 1.4,
+      "residues": 115
+    },
+    {
+      "pdb": "3I4I",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "uncultured murine large bowel bacterium BAC 14",
+      "resolution": 1.89,
+      "residues": 164
+    },
+    {
+      "pdb": "3ILN",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Rhodothermus marinus",
+      "resolution": 1.95,
+      "residues": 158
+    },
+    {
+      "pdb": "3JUU",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Zobellia galactanivorans",
+      "resolution": 1.8,
+      "residues": 146
+    },
+    {
+      "pdb": "3WVJ",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Acetivibrio thermocellus ATCC 27405",
+      "resolution": 1.95,
+      "residues": 156
+    },
+    {
+      "pdb": "3WZ1",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Microbulbifer thermotolerans",
+      "resolution": 1.6,
+      "residues": 139
+    },
+    {
+      "pdb": "4ASM",
+      "chain": "B",
+      "domain": "Bacteria",
+      "organism": "Zobellia galactanivorans",
+      "resolution": 1.5,
+      "residues": 132
+    },
+    {
+      "pdb": "4AWD",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Phocaeicola plebeius",
+      "resolution": 2.4,
+      "residues": 153
+    },
+    {
+      "pdb": "4BQ1",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Zobellia galactanivorans",
+      "resolution": 1.5,
+      "residues": 167
+    },
+    {
+      "pdb": "4PQ9",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Mycobacterium marinum M",
+      "resolution": 1.2,
+      "residues": 160
+    },
+    {
+      "pdb": "4W65",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Mycolicibacterium fortuitum subsp. fortuitum DSM 46621 = ATCC 6841 = JCM 6387",
+      "resolution": 1.38,
+      "residues": 150
+    },
+    {
+      "pdb": "4WZF",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Mycobacterium tuberculosis H37Rv",
+      "resolution": 1.699,
+      "residues": 163
+    },
+    {
+      "pdb": "4XDQ",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Mycolicibacterium thermoresistibile ATCC 19527",
+      "resolution": 1.35,
+      "residues": 121
+    },
+    {
+      "pdb": "4XXP",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Mycobacterium avium subsp. paratuberculosis K-10",
+      "resolution": 1.6,
+      "residues": 157
+    },
+    {
+      "pdb": "5DXD",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Mycobacteroides abscessus ATCC 19977",
+      "resolution": 1.7,
+      "residues": 118
+    },
+    {
+      "pdb": "5NBO",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacteroides ovatus",
+      "resolution": 1.8,
+      "residues": 159
+    },
+    {
+      "pdb": "5OCR",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Zobellia galactanivorans",
+      "resolution": 1.66,
+      "residues": 138
+    },
+    {
+      "pdb": "5SV8",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Vitis vinifera",
+      "resolution": 1.588,
+      "residues": 141
+    },
+    {
+      "pdb": "5T9X",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Bacteroides uniformis",
+      "resolution": 2.5,
+      "residues": 126
+    },
+    {
+      "pdb": "6HY3",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Zobellia galactanivorans",
+      "resolution": 1.3,
+      "residues": 154
+    },
+    {
+      "pdb": "6IBU",
+      "chain": "A",
+      "domain": "Eukaryota",
+      "organism": "Aspergillus fumigatus Af293",
+      "resolution": 2.25,
+      "residues": 162
+    },
+    {
+      "pdb": "6T2R",
+      "chain": "AAA",
+      "domain": "Bacteria",
+      "organism": "Bacteroides caccae",
+      "resolution": 2.1,
+      "residues": 155
+    },
+    {
+      "pdb": "7EO3",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Actinomycetes bacterium",
+      "resolution": 1.141,
+      "residues": 134
+    },
+    {
+      "pdb": "7WWC",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Pedobacter sp.",
+      "resolution": 2.20216257162,
+      "residues": 173
+    },
+    {
+      "pdb": "8EP4",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Phocaeicola plebeius DSM 17135",
+      "resolution": 1.94,
+      "residues": 162
+    },
+    {
+      "pdb": "8VA4",
+      "chain": "A",
+      "domain": "Unknown",
+      "organism": "metagenome",
+      "resolution": 1.96,
+      "residues": 164
+    },
+    {
+      "pdb": "8XPW",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Stieleria magnilauensis",
+      "resolution": 2.65,
+      "residues": 159
+    },
+    {
+      "pdb": "9IJC",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Wenyingzhuangia fucanilytica",
+      "resolution": 1.52,
+      "residues": 121
+    },
+    {
+      "pdb": "9VOQ",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Cellulosimicrobium cellulans",
+      "resolution": 1.28,
+      "residues": 169
+    },
+    {
+      "pdb": "9XKT",
+      "chain": "A",
+      "domain": "Bacteria",
+      "organism": "Saccharicrinis fermentans DSM 9555 = JCM 21142",
+      "resolution": 1.44,
+      "residues": 136
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EASiMap viewer</title>
+<meta name="description" content="A celestial atlas of enzyme families. Stand on the sugar at the centre of the enzyme and look up: every star is an amino acid.">
+<meta name="theme-color" content="#080c16">
+<meta property="og:title" content="EASiMap: the sky inside an enzyme">
+<meta property="og:description" content="A celestial atlas of enzyme families. Every star is an amino acid.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080c16'/%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23d8b46a' stroke-width='1.2'/%3E%3Cpath d='M16 7l1.6 7.4L25 16l-7.4 1.6L16 25l-1.6-7.4L7 16l7.4-1.6z' fill='%23ece4d2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css?v=a6b70469ab">
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous" defer></script>
+<script>
+(function () {
+  var v = window.EASIMAP_V = 'a6b70469ab', b = new URL('js/', location.href).href, m = { imports: {} };
+  ['core', 'i18n', 'hero', 'metaphor', 'family', 'skies', 'idea', 'guide', 'stories', 'explorer', 'mol'].forEach(function (f) { m.imports[b + f + '.js'] = b + f + '.js?v=' + v; });
+  var s = document.createElement('script'); s.type = 'importmap'; s.textContent = JSON.stringify(m); document.currentScript.after(s);
+})();
+</script>
+<script type="module" src="js/main.js?v=a6b70469ab"></script>
+</head>
+<body data-page="viewer">
+<a class="skip" href="#sky" data-t="skip"></a>
+
+<header class="bar">
+  <a class="mark" href="index.html" aria-label="EASiMap">EASi<span>Map</span></a>
+  <nav class="bar-nav" aria-label="Sections" data-t-aria="nav_label">
+    <a href="index.html#read" data-t="nav_read"></a>
+    <a href="index.html#use" data-t="nav_use"></a>
+    <a href="index.html#stories" data-t="nav_stories"></a>
+    <a href="index.html#method" data-t="nav_method"></a>
+  </nav>
+  <a class="bar-cta bar-home" href="index.html" data-t="nav_home"></a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+</header>
+
+<main>
+<section class="sky" id="sky" aria-labelledby="sky-h">
+  <header class="viewer-head">
+    <h1 id="sky-h"></h1>
+    <div class="seg fam-seg" role="radiogroup" data-t-aria="f_fam" id="sw-fam"></div>
+    <p data-t="sky_sub"></p>
+    <p class="notice" id="fam-note" hidden></p>
+    <details class="help">
+      <summary data-t="help_t"></summary>
+      <ul>
+        <li data-t="help_1"></li>
+        <li data-t="help_2"></li>
+        <li data-t="help_3"></li>
+        <li data-t="help_4"></li>
+      </ul>
+      <p><a href="index.html#use" data-t="help_more"></a></p>
+    </details>
+  </header>
+
+  <div class="console">
+    <aside class="rail" aria-label="Filters" data-t-aria="filters">
+      <div class="rail-top">
+        <p class="count"><b class="num" id="count-n">0</b> <span id="count-of"></span></p>
+        <button type="button" class="linkish" id="f-reset" data-t="f_reset"></button>
+      </div>
+
+      <div class="field">
+        <div class="field-h"><label for="f-dmax" data-t="f_distance"></label><output class="num" id="f-dist-out"></output></div>
+        <div class="dual" id="f-dual">
+          <canvas id="f-hist" aria-hidden="true"></canvas>
+          <input type="range" id="f-dmin" min="0" max="45" step="0.5" value="0" data-t-aria="f_dmin">
+          <input type="range" id="f-dmax" min="0" max="45" step="0.5" value="14" data-t-aria="f_dmax">
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-h"><span id="f-res-l" data-t="f_residue"></span><button type="button" class="linkish" id="f-res-all" data-t="f_all"></button></div>
+        <div class="res-groups" id="f-res" role="group" aria-labelledby="f-res-l"></div>
+      </div>
+
+      <div class="field">
+        <div class="field-h"><label for="f-pos" data-t="f_position"></label></div>
+        <input type="text" id="f-pos" class="txt num" inputmode="text" autocomplete="off" spellcheck="false" data-t-ph="f_position_ph">
+      </div>
+
+      <div class="field">
+        <div class="field-h"><label for="f-pdb" data-t="f_protein"></label></div>
+        <select id="f-pdb" class="txt"></select>
+      </div>
+
+      <div class="field">
+        <div class="field-h"><span id="f-dom-l" data-t="f_domain"></span></div>
+        <div class="chips" id="f-dom" role="group" aria-labelledby="f-dom-l"></div>
+      </div>
+
+      <div class="field switches">
+        <div class="seg" role="radiogroup" data-t-aria="f_proj" id="sw-proj"></div>
+        <div class="seg" role="radiogroup" data-t-aria="f_fit" id="sw-fit"></div>
+        <div class="seg" role="radiogroup" data-t-aria="f_color" id="sw-color"></div>
+      </div>
+    </aside>
+
+    <div class="chart">
+      <div class="try-row"><span data-t="d_empty_p"></span><div class="try" id="try"></div></div>
+      <div class="hemi-switch seg" role="radiogroup" data-t-aria="f_hemi" id="sw-hemi"></div>
+      <div class="discs" id="discs">
+        <figure class="disc" data-hemi="n">
+          <canvas role="img" data-t-aria="disc_n"></canvas>
+          <figcaption><b data-t="north"></b> <span id="north-sub"></span></figcaption>
+        </figure>
+        <figure class="disc" data-hemi="s">
+          <canvas role="img" data-t-aria="disc_s"></canvas>
+          <figcaption><b data-t="south"></b> <span data-t="south_sub"></span></figcaption>
+        </figure>
+        <div class="tip" id="tip" role="status" hidden></div>
+        <div class="zoomers">
+          <button type="button" id="z-in" data-t-aria="z_in">+</button>
+          <button type="button" id="z-out" data-t-aria="z_out">&minus;</button>
+          <button type="button" id="z-0" data-t-aria="z_reset">&#9675;</button>
+        </div>
+      </div>
+      <div class="legend" id="legend"></div>
+      <div class="spectrum-wrap">
+        <div class="field-h"><span data-t="spectrum_t"></span><span class="hint" data-t="spectrum_hint"></span></div>
+        <div class="spectrum" id="spectrum">
+          <canvas></canvas>
+          <svg aria-hidden="true"></svg>
+        </div>
+      </div>
+    </div>
+
+    <aside class="detail" id="detail" aria-live="polite">
+      <div class="detail-card" id="detail-card" hidden>
+        <p class="eyebrow" id="d-eyebrow"></p>
+        <h3 id="d-title"></h3>
+        <p class="hint" id="d-name"></p>
+        <dl class="facts" id="d-facts"></dl>
+        <p class="d-links" id="d-links"></p>
+        <div class="mol-box" id="mol-box">
+          <div id="mol" class="mol"></div>
+          <button type="button" class="btn btn-main" id="mol-load" data-t="mol_load"></button>
+          <p class="hint" id="mol-msg"></p>
+        </div>
+        <div class="neigh">
+          <p class="field-h"><span data-t="d_neigh"></span></p>
+          <div class="chips" id="d-neigh"></div>
+        </div>
+        <button type="button" class="linkish" id="d-close" data-t="d_close"></button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="under">
+    <details class="tablebox" id="tbl-box">
+      <summary data-t="tbl_summary"></summary>
+      <p class="hint" id="tbl-note"></p>
+      <div class="table-scroll" tabindex="0" role="region" data-t-aria="tbl_summary"><table id="tbl"></table></div>
+    </details>
+    <button type="button" class="linkish" id="csv" data-t="csv"></button>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p data-t="foot"></p>
+  <p class="num" id="foot-data"></p>
+</footer>
+
+<noscript><p class="noscript">EASiMap needs JavaScript to draw its maps. EASiMap necesita JavaScript para dibujar los mapas.</p></noscript>
+</body>
+</html>
